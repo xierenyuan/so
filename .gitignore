@@ -1,4 +1,8 @@
-.idea
-node_modules
-bower_components
-.tmp
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
+*idea

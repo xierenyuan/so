@@ -11,11 +11,14 @@
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
+    "classnames": "^2.2.5",
+    "ionicons-pre": "^1.0.0-pre",
     "mint-ui": "^0.1.21",
     "vue": "^1.0.21",
     "vue-resource": "^0.9.3",
     "vue-router": "^0.7.13",
-    "vuex": "^1.0.0-rc.2"
+    "vuex": "^1.0.0-rc.2",
+    "zepto": "^1.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -34,8 +37,11 @@
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.12.0",
     "json-loader": "^0.5.4",
+    "node-sass": "^3.8.0",
     "ora": "^0.2.0",
+    "sass-loader": "^4.0.0",
     "shelljs": "^0.6.0",
+    "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",

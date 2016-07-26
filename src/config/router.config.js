@@ -6,6 +6,12 @@ export default router => {
                 require(['../views/home'], resolve);
             }
         },
+        '/home/:itemId': {
+            component(resolve) {
+                require(['../views/home/item.vue'], resolve);
+            },
+            name:'homeItem'
+        },
         '/waimai': {
             component(resolve) {
                 require(['../views/takeOut'], resolve);

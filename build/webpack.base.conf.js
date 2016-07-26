@@ -36,12 +36,10 @@ module.exports = {
         }, {
             test: /\.json$/,
             loader: 'json'
-        },
-          {
+        }, {
             test: /\.scss$/,
-            loader: 'css!sass'
-          },
-          {
+            loader: 'css!sass?sourceMap'
+        }, {
             test: /\.html$/,
             loader: 'vue-html'
         }, {

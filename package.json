@@ -39,6 +39,8 @@
     "json-loader": "^0.5.4",
     "node-sass": "^3.8.0",
     "ora": "^0.2.0",
+    "postcss-css-reset": "^1.0.2",
+    "postcss-loader": "^0.9.1",
     "sass-loader": "^4.0.0",
     "shelljs": "^0.6.0",
     "style-loader": "^0.13.1",

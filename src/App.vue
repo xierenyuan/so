@@ -47,11 +47,11 @@
         }
     }
 </script>
-<style lang="sass">
+<style lang="scss">
     /*大坑*/
     
     @import './sass/rest.scss';
-    [v-cloak] {
+    v-cloak {
         display: none;
     }
     

@@ -12,7 +12,7 @@
     } from 'mint-ui';
     Vue.component(Cell.name, Cell);
     export default {
-        components:{
+        components: {
 
         }
     }

@@ -8,7 +8,7 @@ import RouterConfig from './config/router.config';
 Vue.use(VueRouter);
 const router = new VueRouter({
     hashbang: true,
-    history: true,
+    history: false,
     saveScrollPosition: true,
     suppressTransitionError: true,
     linkActiveClass: 'is-selected'

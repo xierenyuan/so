@@ -1,6 +1,7 @@
 <template>
   <div>
     <hello></hello>
+    <div class="r"></div>
     <router-view transition="fade" transition-mode="out-in" keep-alive></router-view>
     <mt-tabbar v-if="isApp" :fixed="true" >
       <mt-tab-item id="外卖" v-link="{ path: '/waimai' }">
@@ -62,5 +63,11 @@
     .fade-enter,
     .fade-leave {
         opacity: 0;
+    }
+    
+    .r {
+        width: 100px;
+        height: 100px;
+        background: url(./assets/logo.png);
     }
 </style>

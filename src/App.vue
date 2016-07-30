@@ -1,11 +1,8 @@
 <template>
   <div>
     <hello></hello>
-<<<<<<< HEAD
     <filter></filter>
-=======
     <div class="r"></div>
->>>>>>> css-file
     <router-view transition="fade" transition-mode="out-in" keep-alive></router-view>
     <mt-tabbar v-if="isApp" :fixed="true" >
       <mt-tab-item id="外卖" v-link="{ path: '/waimai' }">

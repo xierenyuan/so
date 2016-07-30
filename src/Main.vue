@@ -11,10 +11,13 @@
 </script>
 
 <style lang="scss">
-    /*大坑*/
     @import './sass/rest.scss';
     @import './fonts/iconfont.css';
     @import './sass/common/common.scss';
+    @import './sass/utill.scss';
+    v-cloak {
+        display: none;
+    }
     .fade-transition {
         transition: opacity .3s ease;
     }

@@ -1,10 +1,8 @@
 <template>
   <div class="so-filter">
     <div class="ui-row-flex ui-whitespace so-filter-cate">
-      <div class="ui-col ui-flex ui-flex-pack-center" v-on:click="filterCate($event)">全部分类</div>
-      <div class="ui-col ui-flex ui-flex-pack-center " v-on:click="filterCate($event)">报销比例</div>
-      <div class="ui-col ui-flex ui-flex-pack-center " v-on:click="filterCate($event)">距离</div>
-      <div class="ui-col ui-flex ui-flex-pack-center " v-on:click="filterCate($event)">智能筛选</div>
+      <div class="ui-col ui-flex ui-flex-pack-center" v-for="item in cates" v-on:click="filterCate($event,item)" v-bind:class="{'filter-active':item.hasActive}" v-bind:text="item.name">全部分类</div>
+
     </div>
     <ul class="ui-tiled so-filter-menu">
       <li>
@@ -65,21 +63,17 @@
     props: {},
     data: function () {
       return {
-        filterOpened:false
+        cates:[
+          {id:1,text:'全部分类',hasActive:false},
+          {id:2,text:'报销比例',hasActive:false},
+          {id:3,text:'距离',hasActive:false},
+          {id:4,text:'智能筛选',hasActive:false},
+        ]
       }
     },
     methods: {
-      filterCate: function (e) {
-        if(!this.filterOpened) {
-          $(".so-filter").css({'overflow': 'visible'});
-          $(".so-filter-menu").height(500);
-          $(e.target.parentElement).find('.ui-col').removeClass('filter-active');
-          $(e.target).addClass('filter-active');
-        }else {
-          $(".so-filter").css({'overflow': 'hidden'});
-          $(e.target).removeClass('filter-active');
-        }
-        this.filterOpened=!this.filterOpened;
+      filterCate: function (e,item) {
+        item.hasActive=!item.hasActive;
       }
     }
   }

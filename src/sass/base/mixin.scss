@@ -92,3 +92,19 @@
     }
   }
 }
+
+//$px为需要转换的字号
+@function pxTorRem($px) {
+  @return $px / $browser-default-font-size * 1rem;
+}
+
+//px 转rem 移动页面 需要/2  $px为需要转换的字号
+@function px2TorRem($px) {
+  @return $px /2/ $browser-default-font-size * 1rem;
+}
+
+//生成rem /2 宽和高
+@mixin wh($width,$height) {
+  width: px2TorRem($width);
+  height: px2TorRem($height);
+}

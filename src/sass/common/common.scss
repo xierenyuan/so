@@ -1,0 +1,67 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+//$px为需要转换的字号
+@function pxTorRem($px) {
+    @return $px / $browser-default-font-size * 1rem;
+}
+
+//px 转rem 移动页面 需要/2  $px为需要转换的字号
+@function px2TorRem($px) {
+    @return $px /2/ $browser-default-font-size * 1rem;
+}
+
+//生成rem /2 宽和高
+@mixin wh($width, $height) {
+    width: px2TorRem($width);
+    height: px2TorRem($height);
+}
+
+::-webkit-input-placeholder {
+    color: $s-placeholder;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: $s-placeholder;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $s-placeholder;
+}
+
+:-ms-input-placeholder {
+    color: $s-placeholder;
+}
+
+body {
+    background-color: $s-bj;
+    min-width: pxTorRem(320px);
+    max-width: pxTorRem(450px);
+    margin: 0 auto;
+    font-family: "Helvetica Neue",'华文黑体', Helvetica, STHeiTi, Arial, sans-serif;
+}
+
+.so {
+    //重写header
+    .mint-header {
+        height: px2TorRem(90px);
+        background-color: #FFFFFF;
+        color: $s-header-color;
+        h1.mint-header-title {
+            font-size: 18px;
+            font-weight: normal;
+            color: $s-header-color;
+        }
+        .mint-button-icon {
+            color: $s-d-color;
+        }
+    }
+    //button 默认样式
+    .mint-button--primary {
+        background-color: $s-d-color;
+        .mint-button-text {
+            font-size: 15px;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 <template>
   <div>
     <hello></hello>
+    <filter></filter>
     <router-view transition="fade" transition-mode="out-in" keep-alive></router-view>
     <mt-tabbar v-if="isApp" :fixed="true" >
       <mt-tab-item id="外卖" v-link="{ path: '/waimai' }">
@@ -33,6 +34,7 @@
         Tabbar,
         TabItem
     } from 'mint-ui';
+    import Filter from './components/Filter.vue';
     Vue.component(Tabbar.name, Tabbar);
     Vue.component(TabItem.name, TabItem);
     export default {
@@ -43,22 +45,24 @@
             };
         },
         components: {
-            Hello
+            Hello,
+            Filter
         }
     }
 </script>
 <style lang="scss">
     /*大坑*/
-    
+
     @import './sass/rest.scss';
+    @import './sass/utill.scss';
     v-cloak {
         display: none;
     }
-    
+
     .fade-transition {
         transition: opacity .3s ease;
     }
-    
+
     .fade-enter,
     .fade-leave {
         opacity: 0;

@@ -1,6 +1,6 @@
 # so
 
-> 凹凹报销
+> 凹凹报销 angular 1.x 版本
 
 ## 启动
 
@@ -16,4 +16,7 @@ npm run build
 
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 第三方
+> [ionic](http://www.ionicframework.com/) 
+
+

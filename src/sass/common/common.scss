@@ -64,4 +64,37 @@ body {
             font-size: 15px;
         }
     }
+    //底部菜单  tab bar 样式
+    .mint-tabbar.s-tab-bar{
+        height: px2TorRem(98px);
+      &:after{
+        border-color: #eaeaea;
+      }
+      > .mint-tab-item{
+           padding-top: px2TorRem(10px);
+           //选中状态
+          &.is-selected{
+            color: $s-d-color;
+            .mint-tab-item-icon{
+              i{
+                font-size:px2TorRem(42px);
+                color:$s-d-color;
+              }
+            }
+            .mint-tab-item-label{
+              color:$s-d-color;
+            }
+          }
+          //272636
+          .mint-tab-item-icon{
+              i{
+                font-size:px2TorRem(42px);
+                color:$s-f-tab-bar-color;
+              }
+          }
+          .mint-tab-item-label{
+            color:$s-f-tab-bar-color;
+          }
+      }
+    }
 }

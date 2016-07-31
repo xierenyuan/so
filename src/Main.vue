@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script>
-    import Vue from 'vue';
-    import MintUI from 'mint-ui';
-    Vue.use(MintUI);
-</script>
-
 <style lang="scss">
     @import './sass/rest.scss';
     @import './fonts/iconfont.css';
@@ -18,6 +12,7 @@
     v-cloak {
         display: none;
     }
+    
     .fade-transition {
         transition: opacity .3s ease;
     }

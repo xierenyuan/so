@@ -4,9 +4,11 @@
     ├── bower_components               //第三方资源文件夹 npm 版本没有的
     ├── src                            //项目源文件
     │    ├── app                       //项目源码    
-    │         ├── pages                //业务项目模块    
-    │         ├── ui                   //ui组件模板    
-    │         └── bootstrap.js         //项目启动入口    
+    │         ├── merchants            //商家
+    │            ├── home              //商铺
+    │            ├── index.js          //商铺入口
+    │            ├── merchants.config  //商铺配置
+    │         ├── index.js             //app 入口    
     │    ├── assets                    //静态资源 
     │    ├── components                //组件库 
     │    ├── config                    //配置 全局配置 路由等 
@@ -15,6 +17,7 @@
     │    ├── utils                     //工具集合
     │    └── bootstrap.js              //项目入口 
     ├── package.json                   //包文件
+    ├── index.tpl.html                 //html 首页模板
     ├── README.md                      //主文件入口
     │
     └──

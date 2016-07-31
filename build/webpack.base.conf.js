@@ -5,20 +5,22 @@ var projectRoot = path.resolve(__dirname, '../');
 
 module.exports = {
     entry: {
-        app: './src/main.js'
+        app: './src/bootstrap.js'
     },
     output: {
         path: config.build.assetsRoot,
         publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
-        filename: '[name].js'
+        filename: '[name].js',
+        sourceMapFilename: '[name].bundle.map'
     },
     resolve: {
-        extensions: ['', '.js', '.vue'],
+        extensions: ['', '.js'],
         fallback: [path.join(__dirname, '../node_modules')],
         alias: {
             'src': path.resolve(__dirname, '../src'),
             'assets': path.resolve(__dirname, '../src/assets'),
-            'components': path.resolve(__dirname, '../src/components')
+            'components': path.resolve(__dirname, '../src/components'),
+            'utils': path.join(__dirname, '../src/utils/utils.js')
         }
     },
     resolveLoader: {
@@ -26,22 +28,24 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.vue$/,
-            loader: 'vue'
-        }, {
             test: /\.js$/,
-            loader: 'babel',
+            loader: 'ng-annotate?add=true!babel?sourceMap&presets[]=es2015',
             include: projectRoot,
-            exclude: /node_modules/
+            exclude: /(node_modules|bower_components|'src\/\lib')/
         }, {
             test: /\.json$/,
             loader: 'json'
         }, {
             test: /\.scss$/,
-            loader: 'css!sass?sourceMap'
+            loader: 'style!css!sass?sourceMap!autoprefixer'
+        }, {
+            test: /\.css$/,
+            loader: 'style-loader!css-loader!autoprefixer-loader?{cascade:false,browsers:["last 3 version", "> 1%", "ie > 7"]}',
+            exclude: /(node_modules|bower_components|'src\/\lib')/
         }, {
             test: /\.html$/,
-            loader: 'vue-html'
+            loader: 'ngtemplate?relativeTo=' + (path.resolve(__dirname, '../src/')) + '!html',
+            exclude: /(index.tpl)/
         }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
             loader: process.env.NODE_ENV === 'production' ? 'u' : 'url',
@@ -57,8 +61,5 @@ module.exports = {
                 name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
             }
         }]
-    },
-    vue: {
-        loaders: utils.cssLoaders()
     }
 };

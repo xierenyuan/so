@@ -1,4 +1,28 @@
+# 目录结构  
+<pre>
+    ├── dist                           //发布文件夹
+    ├── bower_components               //第三方资源文件夹 npm 版本没有的
+    ├── src                            //项目源文件
+    │    ├── app                       //项目源码    
+    │         ├── pages                //业务项目模块    
+    │         ├── ui                   //ui组件模板    
+    │         └── bootstrap.js         //项目启动入口    
+    │    ├── assets                    //静态资源 
+    │    ├── components                //组件库 
+    │    ├── config                    //配置 全局配置 路由等 
+    │    ├── lib                       //第三方包 ngCordova 等文件 
+    │    ├── sass                      //通用样式
+    │    ├── utils                     //工具集合
+    │    └── bootstrap.js              //项目入口 
+    ├── package.json                   //包文件
+    ├── README.md                      //主文件入口
+    │
+    └──
+</pre>  
+
+
 # vscode 运行
+
 ## 1
 ```bash
     brew install ios-webkit-debug-proxy
@@ -25,3 +49,4 @@
  <preference name="WebViewBounce" value="false" />
  <preference name="DisallowOverscroll" value="true" />
 ```
+

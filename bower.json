@@ -1,0 +1,17 @@
+{
+  "name": "so",
+  "description": "凹凹报销 前端 ng 版本",
+  "main": "",
+  "authors": [
+    "xieenyuan@qq.com"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xierenyuan/so",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

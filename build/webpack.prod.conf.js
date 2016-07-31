@@ -8,15 +8,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var env = process.env.NODE_ENV === 'testing' ? require('../config/test.env') : config.build.env;
 var webpackConfig = merge(baseWebpackConfig, {
-    module: {
-        loaders: [{
-            test: /\.scss$/,
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader!sass-loader')
-        }, {
-            test: /\.less$/,
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader!less-loader')
-        }]
-    },
     devtool: config.build.productionSourceMap ? '#source-map' : false,
     output: {
         path: config.build.assetsRoot,

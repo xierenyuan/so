@@ -3,6 +3,7 @@
  * 商铺控制器
  * @export
  * @class ShopsCtrl
+ * @author xierenhong
  */
 export default class ShopsCtrl {
     constructor($ionicPopup) {

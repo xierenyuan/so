@@ -1,8 +1,8 @@
 var path = require('path');
 var config = require('../config');
 var utils = require('./utils');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var projectRoot = path.resolve(__dirname, '../');
-
 module.exports = {
     entry: {
         app: './src/bootstrap.js'
@@ -14,7 +14,7 @@ module.exports = {
         sourceMapFilename: '[name].bundle.map'
     },
     resolve: {
-        extensions: ['', '.js'],
+        extensions: ['', '.js', '.json', '.scss'],
         fallback: [path.join(__dirname, '../node_modules')],
         alias: {
             'src': path.resolve(__dirname, '../src'),
@@ -36,12 +36,20 @@ module.exports = {
             test: /\.json$/,
             loader: 'json'
         }, {
-            test: /\.scss$/,
-            loader: 'style!css!sass?sourceMap!autoprefixer'
+            test: /\.less$/,
+            loader: ExtractTextPlugin.extract(
+                'css?sourceMap&-minimize!autoprefixer-loader!less?sourceMap'
+            )
         }, {
             test: /\.css$/,
-            loader: 'style-loader!css-loader!autoprefixer-loader?{cascade:false,browsers:["last 3 version", "> 1%", "ie > 7"]}',
-            exclude: /(node_modules|bower_components|'src\/\lib')/
+            loader: ExtractTextPlugin.extract(
+                'css?sourceMap&-minimize!autoprefixer-loader'
+            )
+        }, {
+            test: /\.scss$/,
+            loader: ExtractTextPlugin.extract(
+                'css?sourceMap&-minimize!autoprefixer-loader!sass?sourceMap'
+            )
         }, {
             test: /\.html$/,
             loader: 'ngtemplate?relativeTo=' + (path.resolve(__dirname, '../src/')) + '!html',

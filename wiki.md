@@ -53,3 +53,5 @@
  <preference name="DisallowOverscroll" value="true" />
 ```
 
+## 坑记录
+>  重要重要重要 。。。。webpack loader 在base 中有了后 相对应的 别的位置的需要删除  如果别的有了 相对应的 base的以要删除

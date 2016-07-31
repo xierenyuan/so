@@ -16,7 +16,13 @@ npm run build
 
 ```
 
-## 第三方
+## 技术方案
+> ES6    
+> webpack  
+> cordova   
+> sass   
+> fonticon  
+> angular   
 > [ionic](http://www.ionicframework.com/) 
 
 

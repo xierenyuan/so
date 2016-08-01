@@ -52,12 +52,6 @@ export default class IonicConfig {
         $ionicConfigProvider.platform.ios.views.transition('ios');
         $ionicConfigProvider.platform.android.views.transition('android');
 
-
-        $stateProvider.state('so', {
-            url: '/so',
-            template: '<ion-nav-view></ion-nav-view>',
-            absolute: true
-        });
-        $urlRouterProvider.otherwise('/so/login');
+        $urlRouterProvider.otherwise('/u/login');
     }
 }

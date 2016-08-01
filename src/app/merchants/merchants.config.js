@@ -18,10 +18,13 @@ export default class MerchantsConfig {
             url: '/m',
             template: `<ion-nav-bar class="bar-stable">
                             <ion-nav-back-button>
+                                <i class="ion-arrow-left-c"></i> 
                             </ion-nav-back-button>
                         </ion-nav-bar> 
                        <ion-nav-view></ion-nav-view> 
-                        `
+                        `,
+            absolute: true
+
         });
     }
 }

@@ -39,62 +39,53 @@ body {
     min-width: pxTorRem(320px);
     max-width: pxTorRem(450px);
     margin: 0 auto;
-    font-family: "Helvetica Neue",'华文黑体', Helvetica, STHeiTi, Arial, sans-serif;
+    font-family: "Helvetica Neue", '华文黑体', Helvetica, STHeiTi, Arial, sans-serif;
 }
 
 .so {
     //重写header
-    .mint-header {
-        height: px2TorRem(90px);
-        background-color: #FFFFFF;
-        color: $s-header-color;
-        h1.mint-header-title {
-            font-size: 18px;
-            font-weight: normal;
+    .bar.bar-header {
+        &.bar-stable {
+            height: px2TorRem(90px);
+            background-color: #FFF;
             color: $s-header-color;
-        }
-        .mint-button-icon {
-            color: $s-d-color;
-        }
-    }
-    //button 默认样式
-    .mint-button--primary {
-        background-color: $s-d-color;
-        .mint-button-text {
-            font-size: 15px;
+            border-bottom: 1px solid #eaeaea;
+            .title {
+                font-size: 18px;
+                font-weight: normal;
+                color: $s-header-color;
+            }
+            .buttons {
+                .button {
+                    i {
+                        color: $s-d-color;
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
     //底部菜单  tab bar 样式
-    .mint-tabbar.s-tab-bar{
-        height: px2TorRem(98px);
-      &:after{
+    .tabs {
         border-color: #eaeaea;
-      }
-      > .mint-tab-item{
-           padding-top: px2TorRem(10px);
-           //选中状态
-          &.is-selected{
+        background-color: #fff;
+        background-image: -webkit-linear-gradient(bottom, #eaeaea, #eaeaea 50%, transparent 50%);
+        background-image: linear-gradient(0deg, #eaeaea, #eaeaea 50%, transparent 50%);
+        border-top: 1px solid #eaeaea;
+        .tab-item {
+            color: $s-f-tab-bar-color;
+            .icon {
+                font-size: 24px;
+                height: 26px;
+            }
+            .tab-title {
+                font-size: 14px!important;
+            }
+        }
+    }
+    ion-tabs.tabs-color-active-positive {
+        .tab-item.tab-item-active {
             color: $s-d-color;
-            .mint-tab-item-icon{
-              i{
-                font-size:px2TorRem(42px);
-                color:$s-d-color;
-              }
-            }
-            .mint-tab-item-label{
-              color:$s-d-color;
-            }
-          }
-          //272636
-          .mint-tab-item-icon{
-              i{
-                font-size:px2TorRem(42px);
-                color:$s-f-tab-bar-color;
-              }
-          }
-          .mint-tab-item-label{
-            color:$s-f-tab-bar-color;
-          }
-      }
+        }
     }
 }

@@ -20,6 +20,7 @@ class Config {
         });
     }
 }
+
 export default angular.module('so.app.merchants.home.shops', [])
     .config(Config.ConfigInit)
     .controller(ShopsCtrl.name, ShopsCtrl)

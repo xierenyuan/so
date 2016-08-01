@@ -7,5 +7,21 @@
         <button class="button button-positive" ng-click="vm.sayHello()">
          say hello
         </button>
+        <button class="button button-calm" ng-click="vm.onCamerg()">
+         拍照
+        </button>
+        <br/>
+        <div class="list card">
+            <div class="item item-body">
+                <img class="full-image" ng-src="{{ vm.imgUrl }}">
+                <p>
+                    我只是拍照测试,一会拍照的照片将会显示在上面！！！！. {{ vm.msgError }}
+                </p>
+                <p>
+                    <a href="#" class="subdued">1 Like</a>
+                    <a href="#" class="subdued">5 Comments</a>
+                </p>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

@@ -3,7 +3,10 @@
         <h1>首页2333</h1>
         <mt-cell title="标题文字" v-link="{name:'homeItem',params:{itemId:233}}" is-link value="带链接">
         </mt-cell>
+     <mt-cell title="列表" v-link="{ path: '/list' }" >
+     </mt-cell>
    </div>
+
 </template>
 <script>
     import Vue from 'vue';

@@ -44,19 +44,17 @@ module.exports = {
             loader: 'vue-html'
         }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-            loader: 'u',
+            loader: process.env.NODE_ENV === 'production' ? 'u' : 'url',
             query: {
                 limit: 10000,
                 name: utils.assetsPath('img/[name].[hash:7].[ext]')
-                    //name: utils.assetsPath('../[name].[hash:7].[ext]')
             }
         }, {
             test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-            loader: 'u',
+            loader: process.env.NODE_ENV === 'production' ? 'u' : 'url',
             query: {
                 limit: 10000,
                 name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
-                    //name: utils.assetsPath('../fonts/[name].[hash:7].[ext]')
             }
         }]
     },

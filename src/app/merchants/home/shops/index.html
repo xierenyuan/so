@@ -1,21 +1,21 @@
 <ion-view view-title="商铺">
     <ion-content class="padding">
         我是商铺 hi 我只是测试而已!
-        <br/> {{ vm.msg }}
+        <br/> {{ shop.msg }}
         <br/>
         <br/>
-        <button class="button button-positive" ng-click="vm.sayHello()">
+        <button class="button button-positive" ng-click="shop.sayHello()">
          say hello
         </button>
-        <button class="button button-calm" ng-click="vm.onCamerg()">
+        <button class="button button-calm" ng-click="shop.onCamerg()">
          拍照
         </button>
         <br/>
         <div class="list card">
             <div class="item item-body">
-                <img class="full-image" ng-src="{{ vm.imgUrl }}">
+                <img class="full-image" ng-src="{{ shop.imgUrl }}">
                 <p>
-                    我只是拍照测试,一会拍照的照片将会显示在上面！！！！. {{ vm.msgError }}
+                    我只是拍照测试,一会拍照的照片将会显示在上面！！！！. {{ shop.msgError }}
                 </p>
                 <p>
                     <a href="#" class="subdued">1 Like</a>

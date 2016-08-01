@@ -25,7 +25,9 @@ var webpackConfig = merge(baseWebpackConfig, {
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
-            }
+            },
+            //不设置他 class 类名会变形 会导致 Class.name 失效  233 这是一个大坑铭记
+            mangle: false
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
         // extract css into its own file

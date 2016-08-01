@@ -13,7 +13,7 @@ class Config {
                 'shops': {
                     templateUrl: temp,
                     controller: ShopsCtrl.name,
-                    controllerAs: 'vm'
+                    controllerAs: 'shop'
                 }
             }
 

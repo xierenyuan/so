@@ -9,7 +9,8 @@ import '../lib/ionic/js/ionic';
 import '../lib/ionic/js/ionic-angular';
 import '../lib/ngCordova/dist/ng-cordova';
 import IonicConfig from './ionic.config';
-export default angular.module('so.ui', ['ionic', 'ngCordova'])
+import hello from './hello.word';
+export default angular.module('so.ui', ['ionic', 'ngCordova', hello])
     .run(IonicConfig.RunInit)
     .config(IonicConfig.ConfigInit)
     .name;

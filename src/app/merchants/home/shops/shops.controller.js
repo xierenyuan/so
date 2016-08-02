@@ -45,4 +45,11 @@ export default class ShopsCtrl {
             template: 'so hello 我在方法里 0.0'
         });
     }
+
+    sayHi() {
+        this.$ionicPopup.alert({
+            title: '提示！',
+            template: '我是指令的一个事件 0.0'
+        });
+    }
 }

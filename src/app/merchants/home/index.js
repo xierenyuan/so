@@ -5,6 +5,7 @@
 
 import './index.scss';
 import shops from './shops';
+import list from './list';
 import temp from './index.html';
 import MHomeCtrl from './home.controller';
 
@@ -20,7 +21,7 @@ class Config {
     }
 }
 
-export default angular.module('so.app.merchants.home', [shops])
+export default angular.module('so.app.merchants.home', [shops, list])
     .config(Config.ConfigInit)
     .controller(MHomeCtrl.name, MHomeCtrl)
     .name;

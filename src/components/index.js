@@ -10,7 +10,8 @@ import '../lib/ionic/js/ionic-angular';
 import '../lib/ngCordova/dist/ng-cordova';
 import IonicConfig from './ionic.config';
 import hello from './hello.word';
-export default angular.module('so.ui', ['ionic', 'ngCordova', hello])
+import ListFilter from './list.filter';
+export default angular.module('so.ui', ['ionic', 'ngCordova', hello,ListFilter])
     .run(IonicConfig.RunInit)
     .config(IonicConfig.ConfigInit)
     .name;

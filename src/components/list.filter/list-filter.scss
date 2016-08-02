@@ -1,0 +1,10 @@
+.list-filter{
+  text-align: center;
+  .col{
+    padding: 0;
+    border-right: 1px solid #ccc;
+  }
+  .col:last-child{
+    border-right: 0;
+  }
+}

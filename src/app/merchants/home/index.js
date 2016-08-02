@@ -4,6 +4,7 @@
  */
 
 import shops from './shops';
+import list from './list';
 import temp from './index.html';
 
 class Config {
@@ -16,6 +17,6 @@ class Config {
     }
 }
 
-export default angular.module('so.app.merchants.home', [shops])
+export default angular.module('so.app.merchants.home', [shops,list])
     .config(Config.ConfigInit)
     .name;

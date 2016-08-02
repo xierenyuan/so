@@ -1,4 +1,4 @@
-<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+<ion-tabs class=" tabs-icon-top tabs-color-active-positive merchants-tabs">
     <!-- 商铺 -->
     <ion-tab title="商铺" icon-off="ion-home" icon-on="ion-home" ui-sref="m.home.shops">
         <ion-nav-view name="shops"></ion-nav-view>
@@ -7,9 +7,8 @@
     <ion-tab title="消费" icon-off="ion-ios-cart" icon-on="ion-ios-cart">
         <ion-nav-view name="tab-chats"></ion-nav-view>
     </ion-tab>
-    <!-- 凹凸凹 -->
-    <ion-tab title="凹凸凹" icon-off="ion-qr-scanner" icon-on="ion-qr-scanner">
-        <ion-nav-view name="tab-chats"></ion-nav-view>
+    <!-- 扫凸扫 -->
+    <ion-tab class="m-tab-aotuao" disabled="true" title="扫凸扫" icon-off="ion-qr-scanner" icon-on="ion-qr-scanner">
     </ion-tab>
     <ion-tab title="附近" icon-off="ion-location" icon-on="ion-ios-chatboxes">
         <ion-nav-view name="tab-chats"></ion-nav-view>
@@ -18,3 +17,9 @@
         <ion-nav-view name="tab-account"></ion-nav-view>
     </ion-tab>
 </ion-tabs>
+<!--扫凸扫 -->
+<div class="s-btn-contain" ng-click="home.onScan()">
+    <button type="button" class="s-btn-ata button button-positive ">
+        <i class="ion-qr-scanner"></i>
+    </button>
+</div>

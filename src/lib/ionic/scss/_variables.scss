@@ -104,8 +104,8 @@ $button-light-active-bg:          #fafafa !default;
 $button-light-active-border:      #ccc !default;
 
 $button-stable-bg:                $stable !default;
-$button-stable-text:              #444 !default;
-$button-stable-border:            #b2b2b2 !default;
+$button-stable-text:              #333  !default;
+$button-stable-border:            #eaeaea !default;
 $button-stable-active-bg:         #e5e5e5 !default;
 $button-stable-active-border:     #a2a2a2 !default;
 
@@ -177,7 +177,7 @@ $bar-light-border:                $button-light-border !default;
 $bar-light-active-bg:             $button-light-active-bg !default;
 $bar-light-active-border:         $button-light-active-border !default;
 
-$bar-stable-bg:                   rgba($button-stable-bg, $bar-transparency) !default;
+$bar-stable-bg:                   #FFFFFF !default;
 $bar-stable-text:                 $button-stable-text !default;
 $bar-stable-border:               $button-stable-border !default;
 $bar-stable-active-bg:            $button-stable-active-bg !default;

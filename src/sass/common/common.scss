@@ -37,7 +37,6 @@
 body {
     background-color: $s-bj;
     min-width: pxTorRem(320px);
-    max-width: pxTorRem(450px);
     margin: 0 auto;
     font-family: "Helvetica Neue", '华文黑体', Helvetica, STHeiTi, Arial, sans-serif;
 }
@@ -47,13 +46,9 @@ body {
     .bar.bar-header {
         &.bar-stable {
             height: px2TorRem(90px);
-            background-color: #FFF;
-            color: $s-header-color;
-            border-bottom: 1px solid #eaeaea;
             .title {
                 font-size: 18px;
                 font-weight: normal;
-                color: $s-header-color;
             }
             .buttons {
                 .button {
@@ -79,7 +74,7 @@ body {
                 height: 26px;
             }
             .tab-title {
-                font-size: 14px!important;
+                font-size: 12px!important;
             }
         }
     }

@@ -1,7 +1,6 @@
 //筛选菜单级联列表循环个数
 $filterMenuItemCount:3;
 .list-filter{
-  margin-top: 20px;
   text-align: center;
   height: 31px;
   position: relative;
@@ -10,7 +9,7 @@ $filterMenuItemCount:3;
   .filter-tabs{
     border-bottom: 1px solid #d5d5d5;
     background: white;
-    color: #333333;
+    color: #5a5a5a;
     height: 31px;
     width: 100%;
     position: relative;
@@ -18,7 +17,9 @@ $filterMenuItemCount:3;
     .col{
       padding: 0;
       border-right: 1px solid #999999;
-
+      .iconfont{
+        font-size: 14px;
+      }
     }
     .col:last-child{
       border-right: 0;

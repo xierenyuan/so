@@ -272,7 +272,7 @@ class Util {
     }
 
     /**
-     * 
+     *
      * url 转成参数  get 方式时使用
      * @static
      * @param {object} params 需要转换的参数

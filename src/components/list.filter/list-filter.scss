@@ -1,10 +1,93 @@
+//筛选菜单级联列表循环个数
+$filterMenuItemCount:3;
 .list-filter{
+  margin-top: 20px;
   text-align: center;
-  .col{
-    padding: 0;
-    border-right: 1px solid #ccc;
+  height: 31px;
+  position: relative;
+  z-index: 0;
+  //标签
+  .filter-tabs{
+    border-bottom: 1px solid #d5d5d5;
+    background: white;
+    color: #333333;
+    height: 31px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    .col{
+      padding: 0;
+      border-right: 1px solid #999999;
+
+    }
+    .col:last-child{
+      border-right: 0;
+    }
+    .filter-active {
+      color: #ff6a6e;
+    }
   }
-  .col:last-child{
-    border-right: 0;
+  //菜单容器
+  .filter-menus-container{
+    overflow: hidden;
+    //菜单
+    .filter-menus {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      color: #898989;
+      position: relative;
+      z-index: 0;
+
+      @for $i from 1 through $filterMenuItemCount {
+        @if $i==1 {
+          .col:nth-child(1) {
+            background: #ffffff;
+          }
+        } @else if $i==2 {
+          .col:nth-child(2) {
+            background: #f2f2f2;
+          }
+        } @else if $i==3 {
+          .col:nth-child(3) {
+            background: #e4e4e4;
+          }
+        }
+      }
+      .col{
+        padding: 0;
+        li{
+          padding: 10px 0;
+          border-bottom: 1px solid #d5d5d5;
+        }
+      }
+      .menu-one{
+        li {
+          text-align: left;
+          padding: 10px 13px;
+        }
+      }
+    }
+    .filter-menus-down-pull-anim{
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transition: 200ms ease-out;
+      -webkit-transition: 200ms ease-out;
+    }
+    .filter-menus-close{
+      transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transition: inherit;
+      -webkit-transition: inherit;
+    }
   }
 }
+.list-filter-over-hidden{
+  overflow: hidden;
+}
+.list-filter-over-visible{
+  overflow: visible;
+}
+
+
+

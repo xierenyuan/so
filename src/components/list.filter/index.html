@@ -1,3 +1,18 @@
-<div class="row list-filter">
-  <div class="col" ng-repeat="item in tabItems" ng-click="vm.onClick(item,$index)">{{item.text}}</div>
+<div class="list-filter"
+     ng-class="{'list-filter-over-hidden':!vm.filterHidden,'list-filter-over-visible':vm.filterHidden}">
+  <div class="row filter-tabs">
+    <div class="col" ng-repeat="item in tabItems"
+         ng-class="{'filter-active':item.$hasActive&&$index==vm.filterActiveIndex}" ng-click="vm.onTabClick(item,$index)">
+      {{item.text}}<span class="iconfont">&#xe603;</span>
+    </div>
+  </div>
+  <div class="filter-menus-container">
+    <div class="row filter-menus"
+         ng-class="{'filter-menus-down-pull-anim':vm.filterHidden,'filter-menus-close':!vm.filterHidden}">
+      <ul class="col" ng-repeat="item in menuItems" ng-class="{'menu-one':menuItems.length==1}">
+        <li style="display: none" ng-bind="$menuIndex=$index"></li>
+        <li ng-repeat="menu in item.items" ng-click="vm.onMenuClick(menu,$menuIndex)">{{menu.text}}</li>
+      </ul>
+    </div>
+  </div>
 </div>

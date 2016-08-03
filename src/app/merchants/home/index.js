@@ -18,6 +18,7 @@ class Config {
             controller: MHomeCtrl.name,
             controllerAs: 'home'
         });
+        console.log('呵呵呵 home');
     }
 }
 

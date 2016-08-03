@@ -5,5 +5,5 @@
 import MerchantsConfig from './merchants.config';
 import home from './home/index.js';
 export default angular.module('so.app.merchants', [home])
-    .config(MerchantsConfig.ConfigInit)
-    .name;
+  .config(MerchantsConfig.ConfigInit)
+  .name;

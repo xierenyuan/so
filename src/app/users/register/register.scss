@@ -1,0 +1,17 @@
+@import '../../../sass/base/variable.scss';
+
+.register {
+  .main-cont {
+    .form-group {
+      input {
+        padding-left: 75px;
+      }
+      span {
+        position: absolute;
+        font-size: 14px;
+        top: 12px;
+        left: 8px;
+      }
+    }
+  }
+}

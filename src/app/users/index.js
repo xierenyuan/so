@@ -3,6 +3,7 @@
  * @author xierenhong
  */
 import login from './login';
+import register from './register';
 class Config {
     static ConfigInit($stateProvider) {
         'ngInject';
@@ -14,6 +15,6 @@ class Config {
     }
 }
 
-export default angular.module('so.app.user', [login])
+export default angular.module('so.app.user', [login,register])
     .config(Config.ConfigInit)
     .name;

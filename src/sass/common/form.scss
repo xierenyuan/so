@@ -1,0 +1,19 @@
+.so-form {
+  margin: 0 18px;
+  .form-group {
+    margin-top: 20px;
+    position: relative;
+  }
+  input {
+    border: 1px solid #dbdbdb;
+    height: 42px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 14px;
+    -webkit-appearance: none;
+    background-image: none;
+    &:placeholder {
+      color: #999999;
+    }
+  }
+}

@@ -8,9 +8,8 @@ import temp from './index.html';
 class Config {
     static ConfigInit($stateProvider) {
         'ngInject';
-        console.log('呵呵');
-        $stateProvider.state('m.home.c.p', {
-            url: '/p',
+        $stateProvider.state('m.home.crowd.p', {
+            url: '/crowd/p',
             templateUrl: temp
         });
     }

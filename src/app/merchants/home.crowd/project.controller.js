@@ -4,6 +4,7 @@
  */
 export default class ProjectCtrl {
   constructor() {
+
   }
 
 }

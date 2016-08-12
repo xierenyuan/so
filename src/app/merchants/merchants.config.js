@@ -1,6 +1,6 @@
 /**
  * 
- * 商户配置 文件
+ * 商户配置 文件 1.0
  * @export
  * @class MerchantsConfig
  * @author xierenhong

@@ -4,6 +4,7 @@
     ├── bower_components               //第三方资源文件夹 npm 版本没有的
     ├── src                            //项目源文件
     │    ├── app                       //项目源码    
+    │         ├── ao                   //用户app
     │         ├── merchants            //商家
     │            ├── home              //商铺
     │            ├── index.js          //商铺入口

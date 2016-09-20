@@ -1,3 +1,5 @@
+@import '../../../sass/base/variable.scss';
+@import '../../../sass/base/mixin.scss';
 $header-bj:#ffc12a;
 .bar.bar-energized {
     &.bar-ao-h {
@@ -51,11 +53,39 @@ $header-bj:#ffc12a;
 
 // nav
 .ao-nav {
-    height: 150px;
+    height: px2TorRem(320px);
     width: 100%;
     .slider {
         height: 150px;
+        ul {
+            padding: 0 10px;
+            width: 100%;
+            height: 100%;
+            li {
+                width: 25%;
+                float: left;
+                text-align: center;
+                // height: 50%;
+                .icon-circle {
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: px2TorRem(15px);
+                    width: px2TorRem(75px);
+                    height: px2TorRem(75px);
+                    border-radius: px2TorRem(25px);
+                    text-align: center;
+                    line-height: px2TorRem(75px);
+                    font-size: px2TorRem(45px);
+                    color: #ffffff;
+                    //margin-bottom: px2TorRem(2px);
+                }
+                .icon-desc {
+                    color: #666;
+                }
+            }
+        }
         .slider-pager {
+            bottom: 1px;
             .slider-pager-page {
                 color: #bcbcbc;
                 opacity: 1;

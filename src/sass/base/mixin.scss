@@ -1,6 +1,6 @@
 @mixin placehold-img {
     position: relative;
-    & > span {
+    &>span {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -14,7 +14,7 @@
 
 @mixin img {
     position: relative;
-    & > span {
+    &>span {
         display: block;
         width: 100%;
         height: 100%;
@@ -29,7 +29,7 @@
     height: #{$size}px;
     -webkit-border-radius: $border-radius-max;
     overflow: hidden;
-    & > span {
+    &>span {
         width: 100%;
         height: 100%;
         display: block;
@@ -96,3 +96,12 @@
     }
 }
 
+//px 转rem 移动页面 需要/2  $px为需要转换的字号
+@function px2TorRem($px) {
+    @return $px /2/ $browser-default-font-size * 1rem;
+}
+
+//$px为需要转换的字号
+@function pxTorRem($px) {
+    @return $px / $browser-default-font-size * 1rem;
+}

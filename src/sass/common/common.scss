@@ -16,6 +16,10 @@
     height: px2TorRem($height);
 }
 
+.so-content {
+    background-color: #f8f8f8;
+}
+
 ::-webkit-input-placeholder {
     color: $s-placeholder;
 }
@@ -83,57 +87,56 @@ body {
             color: $s-d-color;
         }
     }
-  //重写header
-  .bar.bar-header {
-    &.bar-stable {
-      height: px2TorRem(90px);
-      .title {
-        font-size: 18px;
-        font-weight: normal;
-      }
-      .buttons {
-        .button {
-          i {
-            color: $s-d-color;
-            font-size: 18px;
-          }
+    //重写header
+    .bar.bar-header {
+        &.bar-stable {
+            height: px2TorRem(90px);
+            .title {
+                font-size: 18px;
+                font-weight: normal;
+            }
+            .buttons {
+                .button {
+                    i {
+                        color: $s-d-color;
+                        font-size: 18px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
-  //底部菜单  tab bar 样式
-  .tabs {
-    border-color: #eaeaea;
-    background-color: #fff;
-    background-image: -webkit-linear-gradient(bottom, #eaeaea, #eaeaea 50%, transparent 50%);
-    background-image: linear-gradient(0deg, #eaeaea, #eaeaea 50%, transparent 50%);
-    border-top: 1px solid #eaeaea;
-    .tab-item {
-      color: $s-f-tab-bar-color;
-      .icon {
-        font-size: 24px;
-        height: 26px;
-      }
-      .tab-title {
-        font-size: 12px !important;
-      }
+    //底部菜单  tab bar 样式
+    .tabs {
+        border-color: #eaeaea;
+        background-color: #fff;
+        background-image: -webkit-linear-gradient(bottom, #eaeaea, #eaeaea 50%, transparent 50%);
+        background-image: linear-gradient(0deg, #eaeaea, #eaeaea 50%, transparent 50%);
+        border-top: 1px solid #eaeaea;
+        .tab-item {
+            color: $s-f-tab-bar-color;
+            .icon {
+                font-size: 24px;
+                height: 26px;
+            }
+            .tab-title {
+                font-size: 12px !important;
+            }
+        }
     }
-  }
-  ion-tabs.tabs-color-active-positive {
-    .tab-item.tab-item-active {
-      color: $s-d-color;
+    ion-tabs.tabs-color-active-positive {
+        .tab-item.tab-item-active {
+            color: $s-d-color;
+        }
     }
-  }
-  //内容背景色
-  .so-body {
-    background-color: $s-bj;
-  }
-
-  //添加link-button
-  .link-button {
-    color: $s-link-color;
-  }
-  .link-bright {
-    color: $s-d-color;
-  }
+    //内容背景色
+    .so-body {
+        background-color: $s-bj;
+    }
+    //添加link-button
+    .link-button {
+        color: $s-link-color;
+    }
+    .link-bright {
+        color: $s-d-color;
+    }
 }

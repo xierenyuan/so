@@ -48,3 +48,52 @@ $header-bj:#ffc12a;
     background-size: contain;
     background-position: center center;
 }
+
+// nav
+.ao-nav {
+    height: 150px;
+    width: 100%;
+    .slider {
+        height: 150px;
+        .slider-pager {
+            .slider-pager-page {
+                color: #bcbcbc;
+                opacity: 1;
+                &.active {
+                    color: #ff6060;
+                }
+            }
+        }
+    }
+}
+
+//活动
+.ao-ad {
+    height: 57.5px;
+    width: 100%;
+    background-color: dodgerblue;
+}
+
+//邀请好友
+.ao-yqhy {
+    margin-top: 10px;
+    height: 57.5px;
+    width: 100%;
+    background-color: green;
+}
+
+.ao-card {
+    height: auto;
+    background-color: #ffffff;
+    width: 100%;
+    //header
+    .ao-card-header {
+        height: 35px;
+        width: 100%;
+        border-bottom: 1px solid #eaeaea;
+    }
+    //热门推荐
+    &.ao-hot-recommended {
+        margin-top: 10px;
+    }
+}

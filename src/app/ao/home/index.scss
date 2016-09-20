@@ -1,0 +1,50 @@
+$header-bj:#ffc12a;
+.bar.bar-energized {
+    &.bar-ao-h {
+        background-color: $header-bj;
+        border-color: $header-bj;
+        background-image: none;
+    }
+    //下拉城市
+    .btn-left {
+        padding-right: 10px;
+    }
+    //输入框
+    .item-input-wrapper {
+        border-radius: 15px;
+        background: #ffefca;
+        .placeholder-icon {
+            color: #666;
+            &:first-child {
+                padding-right: 1px;
+            }
+        }
+         ::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: #666;
+        }
+         :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #666;
+            opacity: 1;
+        }
+         ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #666;
+            opacity: 1;
+        }
+         :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #666;
+        }
+    }
+}
+
+//banner
+.ao-h-banner {
+    width: 100%;
+    height: 100px;
+    background-color: $header-bj;
+    background-size: contain;
+    background-position: center center;
+}

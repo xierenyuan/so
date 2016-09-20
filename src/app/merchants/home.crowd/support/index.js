@@ -10,9 +10,14 @@ class Config {
     'ngInject';
     $stateProvider.state('m.home.crowd.support', {
       url: '/support',
-      templateUrl: temp,
-      controller: ctrl.name,
-      controllerAs: 'vm'
+      views: {
+        'crowd-support': {
+          templateUrl: temp,
+          controller: ctrl.name,
+          controllerAs: 'vm'
+        }
+      }
+
     });
   }
 }

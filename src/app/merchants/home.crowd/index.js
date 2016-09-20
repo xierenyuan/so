@@ -4,7 +4,7 @@
  */
 import './index.scss';
 import temp from './project.html';
-import project from './project';
+import support from './support';
 import ProjectCtrl from './project.controller';
 class Config {
   static ConfigInit($stateProvider) {
@@ -22,7 +22,7 @@ class Config {
     });
   }
 }
-export default angular.module('so.app.merchants.crowd', [project])
+export default angular.module('so.app.merchants.crowd', [support])
   .config(Config.ConfigInit)
   .controller(ProjectCtrl.name,ProjectCtrl)
   .name;

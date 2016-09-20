@@ -1,7 +1,7 @@
 
 .right-buttons {
-  button {
-    color: #ff696d;
+  .btn-no-border {
+    border: 0;
   }
 }
 //item左右内边距
@@ -39,7 +39,7 @@ $item-padding-left-right:10px;
         z-index: 0;
         font-size: 80px;
         left: -7px;
-        top: 4px;
+        top: 0;
         color: #ff696d;
       }
       i:nth-child(2) {

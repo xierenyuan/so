@@ -1,38 +1,38 @@
-<ion-view view-title="登录" class="login">
-    <ion-header-bar class="bar-stable">
-        <div class="buttons">
-            <button class="button button-clear" ng-click="$ionicGoBack()">
-                <i class="ion-ios-arrow-back"></i>
-            </button>
-        </div>
-        <h1 class="title">登录</h1>
-    </ion-header-bar>
-    <ion-content class="main-cont form-input">
-        <form>
-            <div class="form-group">
-                <i class="iconfont so-email"></i>
-                <span class="iconfont so-shuxian"></span>
-                <input class="" type="email" placeholder="请输入邮箱" />
-            </div>
-            <div class="form-group">
-                <i class="iconfont so-shouquan"></i>
-                <span class="iconfont so-shuxian"></span>
-                <input class="" type="text" placeholder="请输入授权账号" />
-            </div>
-            <div class="form-group">
-                <i class="iconfont so-suo"></i>
-                <span class="iconfont so-shuxian"></span>
-                <input class="" type="password" placeholder="请输入密码" />
-            </div>
-            <div class="form-group">
-                <button class="button button-block button-positive" ng-click="vm.login()">
-                    登录
-                </button>
-            </div>
-            <div class="form-group link-action">
-                <a class="r-reg">商家入驻</a>
-                <a>忘记密码</a>
-            </div>
-        </form>
-    </ion-content>
+<ion-view view-title="登录" class="so-body login">
+  <ion-header-bar class="bar-stable">
+    <div class="buttons">
+      <button class="button button-clear" ng-click="$ionicGoBack()">
+        <i class="ion-ios-arrow-back"></i>
+      </button>
+    </div>
+    <h1 class="title">登录</h1>
+  </ion-header-bar>
+  <ion-content class="main-cont so-form">
+    <form>
+      <div class="form-group">
+        <i class="iconfont so-email"></i>
+        <span class="iconfont so-shuxian"></span>
+        <input class="" type="email" placeholder="请输入邮箱"/>
+      </div>
+      <div class="form-group">
+        <i class="iconfont so-shouquan"></i>
+        <span class="iconfont so-shuxian"></span>
+        <input class="" type="text" placeholder="请输入授权账号"/>
+      </div>
+      <div class="form-group">
+        <i class="iconfont so-suo"></i>
+        <span class="iconfont so-shuxian"></span>
+        <input class="" type="password" placeholder="请输入密码"/>
+      </div>
+      <div class="form-group">
+        <button class="button button-block button-positive" ng-click="vm.login()">
+          登录
+        </button>
+      </div>
+      <div class="clear m-t-5">
+        <a class="float-left link-button">商家入驻</a>
+        <a class="float-right link-bright">忘记密码</a>
+      </div>
+    </form>
+  </ion-content>
 </ion-view>

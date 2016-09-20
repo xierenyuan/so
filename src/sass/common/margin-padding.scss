@@ -1,0 +1,32 @@
+
+/*
+这个文件会自动规范生成以 5像素 为区间的下列样式。
+ .m-t-5  -> .m-t-20
+ .m-r-5  -> .m-r-20
+ .m-b-5  -> .m-b-20
+ .m-l-5  -> .m-l-20
+ .p-t-5  -> .m-t-20
+ .p-r-5  -> .m-r-20
+ .p-b-5  -> .m-b-20
+ .p-l-5  -> .m-l-20
+*/
+
+@mixin lootBot($module,$add,$attr) {
+  @for $i from 0 through 4 {
+    $style: $i*5;
+    .#{$module}-#{$add}-#{$style} {
+      #{$attr}: $style+px;
+    }
+  }
+}
+
+@include lootBot(m, t,margin-top);
+@include lootBot(m, r,margin-right);
+@include lootBot(m, b,margin-bottom);
+@include lootBot(m, l,margin-left);
+
+@include lootBot(p, t,padding-top);
+@include lootBot(p, r,padding-right);
+@include lootBot(p, b,padding-bottom);
+@include lootBot(p, l,padding-left);
+

@@ -1,0 +1,39 @@
+<ion-view view-title="会员注册" class="so-body register">
+  <ion-header-bar class="bar-stable">
+    <div class="buttons">
+      <button class="button button-clear" ng-click="$ionicGoBack()">
+        <i class="ion-ios-arrow-back"></i>
+      </button>
+    </div>
+    <h1 class="title">会员注册</h1>
+  </ion-header-bar>
+  <ion-content class="main-cont so-form">
+    <form>
+      <div class="form-group">
+        <span>手机号 :</span>
+        <input class="" type="tel" placeholder="请输入手机号"/>
+      </div>
+      <div class="form-group">
+        <span>登录密码 :</span>
+        <input class="" type="password" placeholder="请输入密码"/>
+      </div>
+      <div class="form-group">
+        <span>验证码 :</span>
+        <input class="" type="text" placeholder="请输入验证码"/>
+      </div>
+      <div class="form-group">
+        <span>推荐人ID :</span>
+        <input class="" type="tel" placeholder="商户编号"/>
+      </div>
+      <div class="form-group">
+        <button class="button button-block button-positive" ng-click="vm.login()">
+          注册
+        </button>
+      </div>
+      <div class="m-t-5 link-action clear">
+        <a class="float-left link-button">下载商家端APP</a>
+        <a class="float-right link-button" ui-sref="u.login">忘记密码</a>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

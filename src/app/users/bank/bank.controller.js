@@ -1,16 +1,12 @@
 /**
- * 
- * 登录控制器
+ *
+ * 银行账户
  * @export
  * @class LoginCtrl
  */
-export default class LoginCtrl {
+export default class BankCtrl {
     constructor($state) {
         'ngInject';
         this.$state = $state;
-    }
-
-    login() {
-        this.$state.go('m.home.shops');
     }
 }

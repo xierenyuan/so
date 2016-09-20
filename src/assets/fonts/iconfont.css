@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1470364226'); /* IE9*/
-  src: url('iconfont.eot?t=1470364226#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1470364226') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1470364226') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1470364226#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1474377619'); /* IE9*/
+  src: url('iconfont.eot?t=1474377619#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1474377619') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1474377619') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1474377619#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -28,6 +28,7 @@
 .so-user:before { content: "\e615"; }
 .so-suo:before { content: "\e608"; }
 .so-dingdan-80:before { content: "\e60c"; }
+.so-edit:before { content: "\e616"; }
 .so-daipingjia:before { content: "\e60d"; }
 .so-shuxian:before { content: "\e609"; }
 .so-xiaoxinew:before { content: "\e607"; }

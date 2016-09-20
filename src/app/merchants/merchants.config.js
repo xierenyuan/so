@@ -16,7 +16,7 @@ export default class MerchantsConfig {
         'ngInject';
         $stateProvider.state('m', {
             url: '/m',
-            template: `<ion-nav-bar class="bar-stable">
+            template: `<ion-nav-bar class="bar-positive">
                             <ion-nav-back-button>
                                 <i class="ion-arrow-left-c"></i> 
                             </ion-nav-back-button>

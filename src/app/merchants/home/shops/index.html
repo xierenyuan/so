@@ -1,6 +1,19 @@
-<ion-view view-title="商铺">
+<ion-view view-title="商铺" class="so-shops">
+    <ion-nav-title>
+        我的商铺
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+        <button class="button button-clear" ng-click="$ionicGoBack()">
+            <i class="ion-ios-arrow-back"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear" ng-click="$ionicGoBack()">
+            <i class="ion-more"></i>
+        </button>
+    </ion-nav-buttons>
     <ion-content class="padding">
-        我是商铺 hi 我只是测试而已!
+        我是商铺 hi 我只是测试而已!!
         <br/> {{ shop.msg }}
         <br/> 指令:
         <so-hi so-btn-text="我是指令" so-click="shop.sayHi()"> </so-hi>

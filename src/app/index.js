@@ -5,6 +5,7 @@
 import AppConfig from '../config/app.config';
 import merchants from './merchants';
 import users from './users';
-export default angular.module('so.app', [merchants, users])
+import ao from './ao';
+export default angular.module('so.app', [merchants, users, ao])
     .config(AppConfig.ConfigInit)
     .name;

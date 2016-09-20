@@ -5,7 +5,7 @@
       height: 90px;
       padding: 15px 20px;
       position: relative;
-      border-top: 1px solid #999;
+      border-bottom: 1px solid #ccc;
       .avatar {
         width: 60px;
         height: 60px;
@@ -14,13 +14,60 @@
         float: left;
         border-radius: 3px;
       }
+    }
+    .user-item {
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      position: relative;
+      border-bottom: 1px solid #ccc;
+      padding: 0px 20px;
       .action {
-        display: inline-block;
-        position: absolute;
-        font-size: 20px;
-        right: 20px;
-        top: 40%;
+        top: 0%;
       }
+      .iconfont {
+        font-size: 26px;
+      }
+      .so-user{
+        font-size: 20px;
+      }
+      span {
+        font-size: 18px;
+      }
+      .icon {
+        color: #fff;
+        width: 38px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        display: inline-block;
+        border-radius: 3px;
+      }
+
+      .icon-user{
+        background-color: #ffd29e;
+      }
+      .icon-name{
+        background-color: #ffb2c3;
+      }
+      .icon-phone{
+        background-color: #9de0ee;
+      }
+      .icon-id-card{
+        background-color: #dac3ff;
+      }
+      .title {
+        width: 24%;
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    .action {
+      display: inline-block;
+      position: absolute;
+      font-size: 18px;
+      right: 20px;
+      top: 40%;
     }
   }
 }

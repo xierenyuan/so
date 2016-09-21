@@ -1,4 +1,4 @@
-
+@import "./common";
 .right-buttons {
   .btn-no-border {
     border: 0;
@@ -7,7 +7,7 @@
 //item左右内边距
 $item-padding-left-right:10px;
 .crowd-project {
-  background: #f8f8f8;
+  background: $content-gray-bg;
   .project-banner {
     margin-top: 10px;
     width: 100%;

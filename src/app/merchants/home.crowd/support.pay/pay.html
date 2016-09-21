@@ -1,0 +1,29 @@
+<ion-view view-title="凹凹报销商家">
+  <ion-content class="support-pay">
+    <div class="list list-inset pay-inputs">
+      <label class="item item-input">
+        <span class="input-label">消费金额（元）</span>
+        <input type="text" placeholder="请询问服务员后输入">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">给商家留言</span>
+        <input type="text">
+      </label>
+    </div>
+    <div class="list list-inset pay-discount">
+        <div class="item item-avatar">
+          <h2>优惠折扣</h2>
+          <p>6折（消费金额满100元可用）<span>-10.00</span></p>
+        </div>
+    </div>
+    <div class="list list-inset pay-balance">
+      <ion-checkbox ><span>余额支付</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pay-money">100元</span></ion-checkbox>
+
+    </div>
+    <div class="pay-btn">
+      <button class="button button-block button-assertive" ui-sref="m.home.payBill">
+        还需支付  ￥50
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

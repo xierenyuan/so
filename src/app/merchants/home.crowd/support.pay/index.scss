@@ -1,0 +1,31 @@
+@import "../common";
+.support-pay{
+  background: $content-gray-bg;
+  .pay-inputs{
+    .item{
+      input{
+        text-align: right;
+      }
+      .item:last-child{
+        padding-right: 30px;
+      }
+    }
+  }
+  .pay-discount{
+    .item-avatar{
+      padding-left: 16px;
+      p span{
+        float: right;
+        color: #ff363b;
+      }
+    }
+  }
+  .pay-balance{
+    .pay-money{
+      color: #ff363b;
+    }
+  }
+  .pay-btn{
+    margin: 10px;
+  }
+}

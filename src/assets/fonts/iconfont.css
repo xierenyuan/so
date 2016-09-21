@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1474469995'); /* IE9*/
-  src: url('iconfont.eot?t=1474469995#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1474469995') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1474469995') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1474469995#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1474474284'); /* IE9*/
+  src: url('iconfont.eot?t=1474474284#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1474474284') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1474474284') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1474474284#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -17,12 +17,15 @@
 }
 .so-search:before { content: "\e600"; }
 .so-gengduo:before { content: "\e611"; }
+.so-shezhi:before { content: "\e621"; }
+.so-star:before { content: "\e620"; }
 .so-user:before { content: "\e617"; }
 .so-rili:before { content: "\e601"; }
 .so-fenxiang:before { content: "\e612"; }
 .so-tag:before { content: "\e610"; }
-.so-star:before { content: "\e613"; }
+.so-star1:before { content: "\e613"; }
 .so-gps:before { content: "\e602"; }
+.so-biaoqian:before { content: "\e61d"; }
 .so-phone:before { content: "\e618"; }
 .so-jiezhang:before { content: "\e60a"; }
 .so-dingdan:before { content: "\e60b"; }

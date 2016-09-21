@@ -11,7 +11,8 @@ import '../lib/ngCordova/dist/ng-cordova';
 import IonicConfig from './ionic.config';
 import hello from './hello.word';
 import ListFilter from './list.filter';
-export default angular.module('so.ui', ['ionic', 'ngCordova', hello,ListFilter])
+import PayTemp from './pay.temp';
+export default angular.module('so.ui', ['ionic', 'ngCordova', hello,ListFilter,PayTemp])
     .run(IonicConfig.RunInit)
     .config(IonicConfig.ConfigInit)
     .name;

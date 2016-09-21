@@ -1,0 +1,12 @@
+@import "../../sass/common/common";
+.pay-temp{
+  .order-info{
+    h2{
+      span{
+        float: right;
+        font-size: px2TorRem(20px);
+        color: gray;
+      }
+    }
+  }
+}

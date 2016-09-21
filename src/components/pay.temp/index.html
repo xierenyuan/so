@@ -1,0 +1,28 @@
+<div class="pay-temp">
+  <di class="item item-avatar order-info" ui-sref="::order.userUrl">
+    <img src="{{::order.userFace}}">
+    <h2>{{::order.price}} <span>倒计时30分钟</span></h2>
+    <p>{{::order.message}}</p>
+  </di>
+  <ion-list>
+    <div class="item item-avatar">
+      <img src="../../assets/images/weixin.png" alt="">
+        <h2>微信支付</h2>
+        <p>推荐安装微信5.0及以上版本的用户使用</p>
+    </div>
+    <div class="item item-avatar">
+      <img src="../../assets/images/zhifubao.png" alt="">
+      <h2>支付宝支付</h2>
+      <p>推荐有支付宝的用户使用</p>
+    </div>
+    <div class="item item-avatar">
+      <img src="../../assets/images/yinlian.png" alt="">
+      <h2>银行卡支付</h2>
+      <p>支持储蓄卡信用卡，无需开通网银</p>
+    </div>
+
+    <button class="button button-block button-assertive" ng-click="vm.payLink(payState)">
+      确认支付
+    </button>
+  </ion-list>
+</div>

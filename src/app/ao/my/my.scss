@@ -1,0 +1,163 @@
+.my {
+  .my-info {
+    margin-top: 10px;
+    background-color: #fff;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    padding: 20px 20px;
+    img {
+      width: 81px;
+      height: 81px;
+      float: left;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .title, .phone, .cont {
+      display: block;
+      height: 27px;
+      line-height: 27px;
+      font-size: 14px;
+    }
+    .title {
+      font-size: 18px;
+    }
+    .action {
+      position: absolute;
+      top: 40%;
+      right: 30px;
+      font-size: 20px;
+    }
+  }
+  .my-action {
+    background-color: #fff;
+    margin-top: 12px;
+    padding: 20px 0;
+    display: flex;
+    div {
+      flex: 1;
+      text-align: center;
+      i {
+        display: inline-block;
+        font-size: 24px;
+      }
+      .so-daifukuan {
+        font-size: 32px;
+        margin-top: 5px;
+      }
+      .so-star {
+        font-size: 32px;
+      }
+      span {
+        margin-top: 10px;
+        display: block;
+      }
+      .daifukuan {
+        margin-top: 6px;
+      }
+    }
+  }
+  .win-area {
+    background-color: #fff;
+    margin-top: 12px;
+    padding: 0 15px;
+    .title {
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      border-bottom: 1px solid #e4e4e4;
+      .rig-title {
+        float: right;
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .my-account {
+    .account-action {
+      padding: 15px 0;
+      display: flex;
+      .action-item {
+        flex: 1;
+        text-align: center;
+        i {
+          display: inline-block;
+          font-size: 24px;
+        }
+        span {
+          margin-top: 10px;
+          display: block;
+        }
+        div {
+          color: #fff;
+          width: 54px;
+          height: 54px;
+          line-height: 54px;
+          margin: 0 auto;
+          border-radius: 50%;
+        }
+        .edit {
+          background-color: #ffd29e;
+        }
+        .dingdan {
+          background-color: #ffb2c3;
+        }
+        .bank-card {
+          background-color: #9de0ee;
+        }
+        .chaxun {
+          background-color: #dac3ff;
+        }
+      }
+    }
+  }
+  .my-seeting {
+    .seeting {
+      padding: 15px 0;
+      display: flex;
+      .seeting-item {
+        flex: 1;
+        text-align: center;
+        i {
+          display: inline-block;
+          font-size: 24px;
+        }
+        span {
+          margin-top: 10px;
+          display: block;
+        }
+        div {
+          color: #fff;
+          width: 54px;
+          height: 54px;
+          line-height: 54px;
+          margin: 0 auto;
+          border-radius: 50%;
+        }
+        .pwd {
+          background-color: #ffd29e;
+        }
+        .pay-pwd {
+          background-color: #ffb2c3;
+        }
+
+      }
+    }
+  }
+
+  .my-asset {
+    .asset {
+      padding: 15px 0;
+      display: flex;
+      .asset-item {
+        flex: 1;
+        text-align: center;
+        span {
+          display: block;
+          margin-top:10px;
+        }
+      }
+    }
+  }
+}

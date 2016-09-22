@@ -4,6 +4,8 @@
 
 import home from './home';
 import my from './my';
+import citySelect from './city.select';
+import search from './search';
 /**
  *
  * 配置文件
@@ -20,6 +22,6 @@ class Config {
     }
 }
 
-export default angular.module('so.ao', [home,my])
+export default angular.module('so.ao', [home, my, citySelect, search])
     .config(Config.ConfigInit)
     .name;

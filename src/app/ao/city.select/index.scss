@@ -1,0 +1,67 @@
+@import '../../../sass/base/variable.scss';
+@import '../../../sass/base/mixin.scss';
+.pd {
+    padding: px2TorRem(20px) px2TorRem(30px);
+}
+
+.city-select {
+    .content {
+        @extend .pd;
+    }
+    //筛选
+    .search {
+        width: 100%;
+        height: px2TorRem(68px);
+        input {
+            width: 100%;
+            text-align: center;
+            height: px2TorRem(68px);
+            line-height: px2TorRem(68px);
+        }
+    }
+    .header {
+        height: px2TorRem(50px);
+        line-height: px2TorRem(50px);
+        padding: 0;
+        margin-top: 10px;
+        .col {
+            padding: 0;
+            height: px2TorRem(50px);
+            line-height: px2TorRem(50px);
+            color: #999999;
+            font-size: px2TorRem(24px);
+            &.right {
+                text-align: right;
+            }
+        }
+    }
+    //城市
+    .box {
+        margin-top: 5px;
+        width: 100%;
+        height: auto;
+        border: 1px solid #e6e6e6;
+        border-right: 0;
+        border-bottom: 0;
+        border-top: 0;
+        ul {
+            position: relative;
+            overflow: hidden;
+            min-height: px2TorRem(72px);
+            li {
+                width: 33.333%;
+                float: left;
+                height: px2TorRem(72px);
+                line-height: px2TorRem(72px);
+                text-align: center;
+                color: #333333;
+                font-size: px2TorRem(28px);
+                background-color: #ffffff;
+                border-bottom: 1px solid #e6e6e6;
+                position: relative;
+                z-index: 10;
+                border-right: 1px solid #e6e6e6;
+            }
+        }
+    }
+}

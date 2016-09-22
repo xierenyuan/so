@@ -4,6 +4,7 @@
 import './index.scss';
 import temp from './index.html';
 import search from './consume.search';
+import message from './consume.message';
 import ConsumeCtrl from './consume.controller';
 class Config {
   static ConfigInit($stateProvider) {
@@ -20,7 +21,7 @@ class Config {
     });
   }
 }
-export default angular.module('so.app.merchants.consume', [search])
+export default angular.module('so.app.merchants.consume', [search,message])
   .config(Config.ConfigInit)
   .controller(ConsumeCtrl.name,ConsumeCtrl)
   .name;

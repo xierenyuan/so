@@ -1,4 +1,16 @@
-<ion-view view-title="消费">
+<ion-view view-title="消费" style="margin: 0">
+  <ion-nav-title class="bar-con-title">
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper" ui-sref="m.home.conSearch">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" readonly>
+      </label>
+    </div>
+  </ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button button-clear bar-con-button-right" ui-sref="m.home.conMessage"><i class="iconfont">&#xe626</i>
+    </button>
+  </ion-nav-buttons>
   <ion-content class="">
   </ion-content>
 </ion-view>

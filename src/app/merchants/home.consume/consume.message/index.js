@@ -3,24 +3,23 @@
  */
 import './index.scss';
 import temp from './index.html';
-import SearchCtrl from './search.controller';
+import MessageCtrl from './message.controller';
 class Config {
   static ConfigInit($stateProvider) {
     'ngInject';
-    $stateProvider.state('m.home.conSearch', {
-      url: '/conSearch',
+    $stateProvider.state('m.home.conMessage', {
+      url: '/conMessage',
       views: {
         'consume': {
           templateUrl: temp,
-          controller: SearchCtrl.name,
+          controller: MessageCtrl.name,
           controllerAs: 'vm'
         }
       }
-
     });
   }
 }
-export default angular.module('so.app.merchants.consume.conSearch', [])
+export default angular.module('so.app.merchants.consume.conMessage', [])
   .config(Config.ConfigInit)
-  .controller(SearchCtrl.name,SearchCtrl)
+  .controller(MessageCtrl.name,MessageCtrl)
   .name;

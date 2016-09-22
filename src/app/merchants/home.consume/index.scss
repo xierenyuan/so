@@ -1,0 +1,14 @@
+@import "../../../sass/common/common";
+$content-gray-bg:#f8f8f8;
+.bar-con-title{
+  .bar-header{
+    padding: 0;
+  }
+}
+.bar-con-button-right{
+  margin-right: px2TorRem(10px);
+  i{
+    font-size: px2TorRem(40px);
+
+  }
+}

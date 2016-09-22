@@ -13,3 +13,63 @@ a {
 .clear {
   clear: both;
 }
+
+
+.lump-area {
+  position: relative;
+  background-color: #fff;
+  margin-top: 12px;
+  padding: 0 15px;
+  .title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-bottom: 1px solid #e4e4e4;
+    .rig-title {
+      float: right;
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+  .lump-cont{
+    padding: 15px 0;
+    display: flex;
+  }
+  .lump-item {
+    flex: 1;
+    text-align: center;
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  .icon-item{
+    flex: 1;
+    text-align: center;
+    div{
+      color: #fff;
+      width: 54px;
+      height: 54px;
+      line-height: 54px;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    i {
+      display: inline-block;
+      font-size: 24px;
+    }
+    span {
+      margin-top: 10px;
+      display: block;
+    }
+  }
+
+  $color: #ffd29e #ffb2c3 #9de0ee #dac3ff;
+  @for $i from 1 through length($color) {
+    .color-#{$i}{
+      background-color:nth($color,$i);
+    }
+  }
+}

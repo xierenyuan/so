@@ -3,8 +3,9 @@
  */
 
 import home from './home';
+import my from './my';
 /**
- * 
+ *
  * 配置文件
  * @class Config
  */
@@ -19,6 +20,6 @@ class Config {
     }
 }
 
-export default angular.module('so.ao', [home])
+export default angular.module('so.ao', [home,my])
     .config(Config.ConfigInit)
     .name;

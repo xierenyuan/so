@@ -1,0 +1,57 @@
+@import "../common";
+
+.crowd-support{
+  background: $content-gray-bg;
+  .support-explain{
+    margin-top: px2TorRem(20px);
+    font-size: px2TorRem(20px);
+    color: #ff363b;
+    p{
+      color: red;
+      font-size: px2TorRem(30px);
+      font-weight: 500;
+    }
+  }
+
+  .support-content{
+    .row,.col{
+      padding: 0;
+    }
+    .row{
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      align-items: center;
+      .col:not(:nth-child(1)){
+        text-align: right;
+        .support-sbtn{
+          padding-left: px2TorRem(40px);
+          padding-right: px2TorRem(40px);
+        }
+      }
+
+    }
+  }
+  .support-report{
+    padding: 16px;
+    >p{
+      font-size: px2TorRem(30px);
+      color: #333333;
+    }
+    >ul{
+      li{
+        color: #666666;
+      }
+    }
+    .row{
+      .col{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

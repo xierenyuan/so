@@ -1,0 +1,91 @@
+@import "./common/common";
+@import "star";
+.shop-banner{
+  .com-discount{
+    margin-left: px2TorRem(5px);
+    background: #ffcb4f;
+    color: white;
+    font-size: px2TorRem(16px);
+    padding:0 px2TorRem(10px);
+  }
+  .shop-attr {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    i {
+      position: absolute;
+    }
+    .iconfont{
+      font-size: 70px;
+    }
+    .shop-enterprise-tag{
+      font-size: 13px;
+      color: white;
+      transform: rotate(-43deg);
+      -webkit-transform: rotate(-43deg);
+      top: 5px;
+      left: 2px;
+    }
+  }
+  //企业tag颜色
+  .shop-attr.shop-enterprise{
+    .iconfont{
+      color: #ff696d;
+    }
+  }
+  //微商tag颜色
+  .shop-attr.shop-mini{
+    .iconfont{
+      color: #ffb656;
+    }
+  }
+  .com-counteract{
+    height: 18px;
+    line-height: 18px;
+    text-align: right;
+    width: 70px;
+    background: #ff696d;
+    float: right;
+    color: white;
+    font-size: 12px;
+    padding-right: 3px;
+    i{
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 9px solid transparent;
+      border-left: 10px solid white;
+      border-bottom: 10px solid transparent;
+    }
+  }
+  .com-grade{
+    margin-top: px2TorRem(20px);
+    .shop-score{
+      color: #ff696d;
+      font-size: px2TorRem(15px);
+    }
+    .shop-price{
+      padding-left: 8%;
+      font-size: px2TorRem(15px);
+      color: #8c8c8c;
+    }
+  }
+  .shop-category{
+    padding: 0;
+    margin-top: px2TorRem(20px);
+    .shop-cate,.shop-distance{
+      text-align: center;
+      color: #9a9a9a;
+      padding: 0;
+      font-size: px2TorRem(25px);
+      padding-right:5px;
+    }
+    .shop-distance{
+      text-align: right;
+      padding: 0;
+    }
+  }
+}

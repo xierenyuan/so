@@ -1,4 +1,4 @@
-.my {
+.my-shop {
   .my-info {
     margin-top: 10px;
     background-color: #fff;
@@ -13,7 +13,7 @@
       display: inline-block;
       margin-right: 20px;
     }
-    .title, .phone, .cont {
+    .title, .leval, .cont {
       display: block;
       height: 27px;
       line-height: 27px;
@@ -27,6 +27,24 @@
       top: 40%;
       right: 30px;
       font-size: 20px;
+    }
+  }
+
+  .jz, .pj {
+    i {
+      font-size: 34px;
+    }
+    span {
+      margin-top: 7px;
+    }
+  }
+
+  .jingying {
+    .lump-cont {
+      padding-top: 5px;
+    }
+    .lump-item {
+      text-align: left;
     }
   }
 }

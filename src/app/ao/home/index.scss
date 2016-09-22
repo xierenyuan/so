@@ -51,57 +51,12 @@ $header-bj:#ffc12a;
     background-position: center center;
 }
 
-// nav
-.ao-nav {
-    height: px2TorRem(320px);
-    width: 100%;
-    .slider {
-        height: 150px;
-        ul {
-            padding: 0 10px;
-            width: 100%;
-            height: 100%;
-            li {
-                width: 25%;
-                float: left;
-                text-align: center;
-                // height: 50%;
-                .icon-circle {
-                    display: block;
-                    margin: 0 auto;
-                    margin-top: px2TorRem(15px);
-                    width: px2TorRem(75px);
-                    height: px2TorRem(75px);
-                    border-radius: px2TorRem(25px);
-                    text-align: center;
-                    line-height: px2TorRem(75px);
-                    font-size: px2TorRem(45px);
-                    color: #ffffff;
-                    //margin-bottom: px2TorRem(2px);
-                }
-                .icon-desc {
-                    color: #666;
-                }
-            }
-        }
-        .slider-pager {
-            bottom: 1px;
-            .slider-pager-page {
-                color: #bcbcbc;
-                opacity: 1;
-                &.active {
-                    color: #ff6060;
-                }
-            }
-        }
-    }
-}
-
+@import './sass/nav.scss';
 //活动
 .ao-ad {
     height: 57.5px;
     width: 100%;
-    background-color: dodgerblue;
+    background-color: #ffffff;
 }
 
 //邀请好友
@@ -109,7 +64,40 @@ $header-bj:#ffc12a;
     margin-top: 10px;
     height: 57.5px;
     width: 100%;
-    background-color: green;
+    background-color: #ffffff;
+    &.row {
+        background-color: #ffffff;
+        padding: 0;
+        .col {
+            a {
+                display: block;
+                height: 100%;
+            }
+            &.left {
+                padding-left: px2TorRem(38px);
+                border-right: 1px solid #eaeaea;
+            }
+            &.right {
+                padding-left: px2TorRem(30px);
+            }
+            .info {
+                display: inline-block;
+                text-align: left;
+                vertical-align: top;
+                width: px2TorRem(150px);
+                strong {
+                    margin-top: px2TorRem(15px);
+                    display: block;
+                    font-size: px2TorRem(30px);
+                }
+                small {
+                    display: block;
+                    color: #685f5e;
+                    font-size: px2TorRem(24px);
+                }
+            }
+        }
+    }
 }
 
 .ao-card {
@@ -120,7 +108,16 @@ $header-bj:#ffc12a;
     .ao-card-header {
         height: 35px;
         width: 100%;
+        line-height: 35px;
+        padding-left: px2TorRem(20px);
         border-bottom: 1px solid #eaeaea;
+        i {
+            color: $s-d-color;
+        }
+        strong {
+            padding-left: px2TorRem(10px);
+            color: #666;
+        }
     }
     //热门推荐
     &.ao-hot-recommended {

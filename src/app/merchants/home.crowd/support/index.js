@@ -24,5 +24,5 @@ class Config {
 
 export default angular.module('so.app.merchants.crowd.support', [])
     .config(Config.ConfigInit)
-    .controller(SupportCtrl.name,SupportCtrl)
+    .controller(SupportCtrl.name, SupportCtrl)
     .name;

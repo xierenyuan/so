@@ -76,19 +76,40 @@
     </nav>
     <!--ad 活动-->
     <section class="ao-ad">
-
+        <img ng-src="{{ ::vm.adImgSrc }}" style="width:100%; height:100%;" />
     </section>
     <!--邀请好友 开阔商家-->
-    <section class="ao-yqhy">
-
+    <section class="ao-yqhy row">
+        <div class="col left">
+            <a>
+                <img src="{{ ::vm.kksjImgSrc }}" style="width:45px; height:100%;" />
+                <span class="info">
+                    <strong>邀请好友</strong>
+                    <small>获得报销能量</small>
+                </span>
+            </a>
+        </div>
+        <div class="col right">
+            <a>
+                <img src="{{ ::vm.yqhyImgSrc }}" style="width:45px; height:100%;" />
+                <span class="info">
+                    <strong>开阔商家</strong>
+                    <small>获得人命币</small>
+                </span>
+            </a>
+        </div>
     </section>
     <!--热门推荐-->
     <section class="ao-card ao-hot-recommended">
         <div class="ao-card-header">
-
+            <i class="ion-fireball"></i><strong>热门推荐</strong>
         </div>
         <div class="ao-card-content">
-
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
         </div>
     </section>
     首页

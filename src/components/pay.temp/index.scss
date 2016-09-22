@@ -9,4 +9,17 @@
       }
     }
   }
+  .pay-cate{
+    position: relative;
+    .radio-icon{
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translate(0,-50%);
+      -webkit-transform: translate(0,-50%);
+      color: #ff363b;
+      font-size: px2TorRem(40px);
+
+    }
+  }
 }

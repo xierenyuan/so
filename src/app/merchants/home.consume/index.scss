@@ -1,9 +1,17 @@
 @import "../../../sass/common/common";
+@import "../../ao/home/index";
 $content-gray-bg:#f8f8f8;
 .bar-con-title{
   .bar-header{
     padding: 0;
   }
+  .item-input-wrapper{
+    border-radius: 15px;
+    background: white;
+  }
+}
+.bar-con-button-left{
+  font-size: px2TorRem(20px);
 }
 .bar-con-button-right{
   margin-right: px2TorRem(10px);
@@ -11,4 +19,7 @@ $content-gray-bg:#f8f8f8;
     font-size: px2TorRem(40px);
 
   }
+}
+.consume{
+  background: $content-gray-bg;
 }

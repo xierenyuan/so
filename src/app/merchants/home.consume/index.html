@@ -1,16 +1,207 @@
 <ion-view view-title="消费" style="margin: 0">
   <ion-nav-title class="bar-con-title">
     <div class="bar bar-header item-input-inset">
+      <button style="padding-right: 5px" class="button button-clear bar-con-button-left" ui-sref="m.home.conMessage">
+        北京&nbsp;<i class="ion-ios-arrow-down"></i>
+      </button>
       <label class="item-input-wrapper" ui-sref="m.home.conSearch">
         <i class="icon ion-ios-search placeholder-icon"></i>
         <input type="search" placeholder="Search" readonly>
       </label>
+      <button class="button button-clear bar-con-button-right" ui-sref="m.home.conMessage"><i
+        class="iconfont">&#xe626</i>
+      </button>
     </div>
   </ion-nav-title>
-  <ion-nav-buttons side="right">
-    <button class="button button-clear bar-con-button-right" ui-sref="m.home.conMessage"><i class="iconfont">&#xe626</i>
-    </button>
-  </ion-nav-buttons>
-  <ion-content class="">
+  <ion-content class="consume">
+    <div class="ao-h-banner" style="background-image: url({{vm.bannerImg}}); "></div>
+
+    <nav class="ao-nav">
+      <ion-slide-box auto-play="false">
+        <ion-slide>
+          <ul>
+            <li>
+              <i class="icon-circle ion-ios-heart" style="background-color:#ff6969;"></i>
+                        <span class="icon-desc">
+                            美食
+                        </span>
+            </li>
+            <li>
+              <i class="icon-circle ion-ios-heart" style="background-color:#38c8f7;"></i>
+                        <span class="icon-desc">
+                            酒店
+                        </span>
+            </li>
+            <li>
+              <i class="icon-circle ion-ios-heart" style="background-color:#86a8fe;"></i>
+                        <span class="icon-desc">
+                            旅游
+                        </span>
+            </li>
+            <li>
+              <i class="icon-circle ion-ios-heart" style="background-color:#ffce2b;"></i>
+                        <span class="icon-desc">
+                            休闲娱乐
+                        </span>
+            </li>
+            <li>
+              <i class="icon-circle ion-ios-heart" style="background-color:#ff9e20;"></i>
+                        <span class="icon-desc">
+                            购物
+                        </span>
+            </li>
+            <li>
+              <i class="icon-circle ion-ios-heart" style="background-color:#ff6161;"></i>
+                        <span class="icon-desc">
+                            摄像写真
+                        </span>
+            </li>
+            <li>
+              <i class="icon-circle ion-ios-heart" style="background-color:#52d5ff;"></i>
+                        <span class="icon-desc">
+                            医疗健康
+                        </span>
+            </li>
+            <li>
+              <i class="icon-circle ion-ios-heart" style="background-color:#ff90c7;"></i>
+                        <span class="icon-desc">
+                            丽人
+                        </span>
+            </li>
+          </ul>
+        </ion-slide>
+        <ion-slide>233</ion-slide>
+        <ion-slide>333333</ion-slide>
+      </ion-slide-box>
+
+    </nav>
+    <!--邀请好友 开阔商家-->
+    <section class="ao-yqhy row">
+      <div class="col left">
+        <a>
+          <img src="{{ ::vm.yqhyImgSrc }}" style="width:45px; height:100%;" />
+                <span class="info">
+                    <strong>邀请好友</strong>
+                    <small>获得报销能量</small>
+                </span>
+        </a>
+      </div>
+      <div class="col right">
+        <a>
+          <img src="{{ ::vm.kksjImgSrc }}" style="width:45px; height:100%;" />
+                <span class="info">
+                    <strong>开阔商家</strong>
+                    <small>获得人命币</small>
+                </span>
+        </a>
+      </div>
+    </section>
+    <!--热门推荐-->
+    <section class="ao-card ao-hot-recommended">
+      <div class="ao-card-header">
+        <i class="ion-fireball"></i><strong>热门推荐</strong>
+      </div>
+      <div class="ao-card-content">
+        <ul>
+
+          <li>
+            <div class="item item-thumbnail-left com-shop-info shop-banner">
+              <img src="../../../assets/images/shop-logo.jpg">
+              <p class="shop-attr shop-enterprise">
+                <i class="iconfont">&#xe635;</i>
+                <i class="shop-enterprise-tag">企业</i>
+              </p>
+              <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+              <p class="com-grade">
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star">&#xe620;</span>
+                <i class="shop-score">4.0分</i>
+                <i class="shop-price">45元/人</i>
+              </p>
+              <div class="row shop-category">
+                <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+                <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+                <div class="col col-50 shop-distance">100m</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item item-thumbnail-left com-shop-info shop-banner">
+              <img src="../../../assets/images/shop-logo.jpg">
+              <p class="shop-attr shop-mini">
+                <i class="iconfont">&#xe635;</i>
+                <i class="shop-enterprise-tag">微商</i>
+              </p>
+              <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+              <p class="com-grade">
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star">&#xe620;</span>
+                <i class="shop-score">4.0分</i>
+                <i class="shop-price">45元/人</i>
+              </p>
+              <div class="row shop-category">
+                <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+                <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+                <div class="col col-50 shop-distance">100m</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item item-thumbnail-left com-shop-info shop-banner">
+              <img src="../../../assets/images/shop-logo.jpg">
+              <p class="shop-attr shop-enterprise">
+                <i class="iconfont">&#xe635;</i>
+                <i class="shop-enterprise-tag">企业</i>
+              </p>
+              <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+              <p class="com-grade">
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star">&#xe620;</span>
+                <i class="shop-score">4.0分</i>
+                <i class="shop-price">45元/人</i>
+              </p>
+              <div class="row shop-category">
+                <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+                <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+                <div class="col col-50 shop-distance">100m</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item item-thumbnail-left com-shop-info shop-banner">
+              <img src="../../../assets/images/shop-logo.jpg">
+              <p class="shop-attr shop-mini">
+                <i class="iconfont">&#xe635;</i>
+                <i class="shop-enterprise-tag">微商</i>
+              </p>
+              <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+              <p class="com-grade">
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star star-light">&#xe620;</span>
+                <span class="iconfont com-star">&#xe620;</span>
+                <i class="shop-score">4.0分</i>
+                <i class="shop-price">45元/人</i>
+              </p>
+              <div class="row shop-category">
+                <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+                <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+                <div class="col col-50 shop-distance">100m</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </ion-content>
 </ion-view>

@@ -4,7 +4,6 @@
 import './index.scss';
 import temp from './index.html';
 import CitySelectCtrl from './city.select.controller';
-
 class Config {
     static ConfigInit($stateProvider) {
         'ngInject';

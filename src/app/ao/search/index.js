@@ -16,7 +16,7 @@ class Config {
         });
     }
 }
-export default angular.module('so.ao.citySelect', [])
+export default angular.module('so.ao.search', [])
     .config(Config.ConfigInit)
     .controller(SearchCtrl.name, SearchCtrl)
     .name;

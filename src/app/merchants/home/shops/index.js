@@ -2,6 +2,7 @@
  * 商铺模块
  * @author xierenhong
  */
+import './index.scss';
 import temp from './index.html';
 import ShopsCtrl from './shops.controller';
 class Config {

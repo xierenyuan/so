@@ -1,5 +1,151 @@
-<ion-view view-title="商铺" class="so-shops">
-    <ion-nav-title>
+<ion-view view-title="商铺" class="so-shops my-shop">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear">
+      <i class="iconfont" style="font-size: 22px">&#xe607;</i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="item item-thumbnail-left com-shop-info shop-banner" style="border: 0" ui-sref="m.home.shopManage">
+      <img src="../../../../assets/images/shop-logo.jpg">
+      <p class="shop-attr shop-enterprise">
+        <i class="iconfont">&#xe635;</i>
+        <i class="shop-enterprise-tag">企业</i>
+      </p>
+      <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+      <p class="com-grade">
+        <span class="iconfont com-star star-light">&#xe620;</span>
+        <span class="iconfont com-star star-light">&#xe620;</span>
+        <span class="iconfont com-star star-light">&#xe620;</span>
+        <span class="iconfont com-star star-light">&#xe620;</span>
+        <span class="iconfont com-star">&#xe620;</span>
+        <i class="shop-score">4.0分</i>
+        <i class="shop-price">45元/人</i>
+        <i class="icon ion-chevron-right shop-go-icon"></i>
+      </p>
+      <div class="row shop-category">
+        <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+        <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+        <div class="col col-50 shop-distance">100m</div>
+      </div>
+    </div>
+    <div class="lump-area">
+      <div class="lump-cont">
+        <div class="icon-item jz">
+          <i class="iconfont so-jiezhang"></i>
+          <span>结账收款</span>
+        </div>
+        <div class="icon-item" ui-sref="m.home.orderInfo">
+          <i class="iconfont so-dingdan"></i>
+          <span>消费订单</span>
+        </div>
+        <div class="icon-item" ui-sref="m.home.bisOrder">
+          <i class="iconfont so-dingdan"></i>
+          <span>营业订单</span>
+        </div>
+        <div class="icon-item pj" ui-sref="m.home.eav">
+          <i class="iconfont so-pingjia"></i>
+          <span>评价管理</span>
+        </div>
+      </div>
+    </div>
+    <div class="lump-area">
+      <div class="title">资产
+        <div class="rig-title">兑换码登记<i class="action ion-chevron-right"></i></div>
+      </div>
+      <div class="lump-cont">
+        <div class="lump-item">
+          <span>$1,000,000</span>
+          <span>凹凸余额</span>
+        </div>
+        <div class="lump-item">
+          <span>$1,000,000</span>
+          <span>营业收入</span>
+        </div>
+        <div class="lump-item">
+          <span>$1,000,000</span>
+          <span>报销能量</span>
+        </div>
+        <div class="lump-item">
+          <span class="money">$1,000,000</span>
+          <span class="name">摇钱树</span>
+        </div>
+      </div>
+
+      <div class="total-reimbursement">累计报销:100</div>
+    </div>
+    <div class="lump-area">
+      <div class="title">财务管理</div>
+      <div class="lump-cont">
+        <div class="icon-item">
+          <div class="color-1"><i class="iconfont so-edit"></i></div>
+          <span>发票申请</span>
+        </div>
+        <div class="icon-item">
+          <div class="color-2"><i class="iconfont so-dingdan"></i></div>
+          <span>提现记录</span>
+        </div>
+        <div class="icon-item">
+          <div class="color-3"><i class="iconfont so-bank-card"></i></div>
+          <span>银行账户</span>
+        </div>
+        <div class="icon-item">
+          <div class="color-4"><i class="iconfont so-chaxun"></i></div>
+          <span>业务查询</span>
+        </div>
+      </div>
+    </div>
+    <div class="lump-area">
+      <div class="title">设置</div>
+      <div class="lump-cont">
+        <div class="icon-item">
+          <div class="color-1"><i class="iconfont so-pwd"></i></div>
+          <span class="daifukuan">登录密码</span>
+        </div>
+        <div class="icon-item">
+          <div class="color-2"><i class="iconfont so-bank-card"></i></div>
+          <span>支付密码</span>
+        </div>
+        <div class="icon-item">
+          <div class="color-3"><i class="iconfont so-bank-card"></i></div>
+          <span>员工管理</span>
+        </div>
+      </div>
+    </div>
+    <div class="lump-area">
+      <div class="title">推广
+        <div class="rig-title">推广二维码<i class="action ion-chevron-right"></i></div>
+      </div>
+      <div class="lump-cont">
+        <div class="lump-item">
+          <span>0</span>
+          <span>推荐商家</span>
+        </div>
+        <div class="lump-item">
+          <span>0</span>
+          <span>推荐商家</span>
+        </div>
+        <div class="lump-item">
+          <span>0</span>
+          <span>能量收益</span>
+        </div>
+        <div class="lump-item">
+          <span>0</span>
+          <span>分佣收益</span>
+        </div>
+      </div>
+    </div>
+    <div class="lump-area jingying">
+      <div class="title">经营资质</div>
+      <div class="lump-cont">
+        <div class="lump-item">
+          <span>主体类型: 企业/个人</span>
+          <span>运营主体: 凹凹报销科技有限公司</span>
+          <span>运营负责人: 张三</span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+   <!-- <ion-nav-title>
         我的商铺
     </ion-nav-title>
     <ion-nav-buttons side="left">
@@ -38,5 +184,5 @@
             </div>
         </div>
         二维码内容放在这里： {{home.barcodeData }}
-    </ion-content>
+    </ion-content>-->
 </ion-view>

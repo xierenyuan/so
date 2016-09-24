@@ -51,9 +51,12 @@
     color: white;
     font-size: 12px;
     padding-right: 3px;
+    position: relative;
     i{
       display: block;
       position: absolute;
+      top:0;
+      left: -1px;
       width: 0;
       height: 0;
       border-top: 9px solid transparent;

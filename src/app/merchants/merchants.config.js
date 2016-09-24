@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * 商户配置 文件 1.0
  * @export
  * @class MerchantsConfig
@@ -7,7 +7,7 @@
  */
 export default class MerchantsConfig {
     /**
-     * 
+     *
      * 配置入口
      * @static
      * @param {any} $stateProvider
@@ -17,14 +17,15 @@ export default class MerchantsConfig {
         $stateProvider.state('m', {
             url: '/m',
             template: `<ion-nav-bar class="bar-positive">
-                            <ion-nav-back-button>
-                                <i class="ion-arrow-left-c"></i> 
+                            <ion-nav-back-button class="button-icon ion-ios-arrow-left">
                             </ion-nav-back-button>
-                        </ion-nav-bar> 
-                       <ion-nav-view></ion-nav-view> 
+                        </ion-nav-bar>
+                       <ion-nav-view></ion-nav-view>
                         `,
             absolute: true
 
         });
     }
 }
+
+

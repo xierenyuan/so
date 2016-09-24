@@ -3,8 +3,10 @@
  */
 import './index.scss';
 import temp from './index.html';
-import search from './consume.search';
+//import search from './consume.search';
 import message from './consume.message';
+import city from './city.select';
+import search from './search';
 import ConsumeCtrl from './consume.controller';
 class Config {
   static ConfigInit($stateProvider) {
@@ -21,7 +23,7 @@ class Config {
     });
   }
 }
-export default angular.module('so.app.merchants.consume', [search,message])
+export default angular.module('so.app.merchants.consume', [search,message,city])
   .config(Config.ConfigInit)
   .controller(ConsumeCtrl.name,ConsumeCtrl)
   .name;

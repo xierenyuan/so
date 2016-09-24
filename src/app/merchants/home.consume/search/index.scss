@@ -1,0 +1,56 @@
+@import '../../../../sass/base/variable.scss';
+@import '../../../../sass/base/mixin.scss';
+.ao-search {
+    //输入框
+    .item-input-wrapper {
+        border-radius: 15px;
+        background: #f2f2f2;
+        .placeholder-icon {
+            color: #666;
+            &:first-child {
+                padding-right: 1px;
+            }
+        }
+    }
+    .button.btn-cancel {
+        font-size: 14px;
+    }
+    //历史记录
+    .card {
+        margin: 0;
+        box-shadow: none;
+        border: 1px solid #e6e6e6;
+        i {
+            color: #c3c3c3;
+        }
+        .item {
+            padding: 10px;
+            border-color: #e6e6e6;
+            font-size: 14px;
+            color: #333;
+            &.s-clear {
+                color: #666;
+                font-size: 13px;
+            }
+        }
+    }
+  .bar-con-title{
+    .bar-header{
+      padding: 0;
+    }
+    .item-input-wrapper{
+      border-radius: 15px;
+      background: white;
+    }
+  }
+  .bar-con-button-left{
+    font-size: px2TorRem(20px);
+  }
+  .bar-con-button-right{
+    margin-right: px2TorRem(10px);
+    i{
+      font-size: px2TorRem(40px);
+
+    }
+  }
+}

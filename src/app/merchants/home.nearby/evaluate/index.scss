@@ -1,0 +1,74 @@
+@import "../../../../sass/common/common";
+@import "../../../../sass/star";
+
+$content-gray-bg: #f8f8f8;
+.evaluate {
+  background: $content-gray-bg;
+  .evaluate-list{
+    margin-bottom: 10px;
+  }
+  .evaluate-cate {
+    padding: 0;
+    .col {
+      font-size: px2TorRem(30px);
+      text-align: center;
+    }
+  }
+  .evaluate-grage {
+    background: white;
+    p {
+      padding: 0 16px;
+      height: 25px;
+      line-height: 30px;
+    }
+    .shop-score {
+      font-size: px2TorRem(25px);
+      color: #ff696d;
+    }
+    > p:first-child {
+      float: left;
+    }
+
+    > p:nth-child(2) {
+      float: right;
+      text-align: right;
+      font-size: px2TorRem(25px);
+      color: #9c9c9c;
+    }
+    > p.clear {
+      margin: 0;
+      height: 0;
+      padding: 0;
+    }
+  }
+  .evaluate-info{
+    border: 0;
+    .info-time{
+      padding-left: 10px;
+      font-size: px2TorRem(22px);
+      color: #a7a7a7;
+    }
+    .evaluate-border{
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 1px;;
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+  .evaluate-info-detail{
+    border: 0;
+    .info-detail-text{
+      white-space: normal;
+      font-size: px2TorRem(26px);
+      color: #929292;
+    }
+    .evaluate-info-imgs{
+      padding: 5px 0;
+      text-align: center;
+      .col{
+        padding: 0 10px;
+      }
+    }
+  }
+}

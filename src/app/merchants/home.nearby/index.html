@@ -1,6 +1,104 @@
 <ion-view view-title="附近">
-  <ion-content>
-    <so-filter so-tab-items="vm.tabItems" so-tab-click-back="vm.tabClickCallBack(item,index)" so-menu-items="vm.menuItems" so-menu-click-back="vm.menuClickCallBack(item,index)"></so-filter>
+  <ion-content class="nearby">
+    <so-filter so-tab-items="vm.tabItems" so-tab-click-back="vm.tabClickCallBack(item,index)"
+               so-menu-items="vm.menuItems" so-menu-click-back="vm.menuClickCallBack(item,index)"></so-filter>
+    <div class="list">
+      <div class="item item-avatar">
+        <img src="{{vm.kksjImgSrc}}">
+        <h2>开拓商家</h2>
+        <p>帮小凹开拓商家，奖励人民币哦~</p>
+      </div>
+    </div>
+    <div class="list">
+      <div class="item item-thumbnail-left com-shop-info shop-banner" ui-sref="m.home.shop">
+        <img src="../../../assets/images/shop-logo.jpg">
+        <p class="shop-attr shop-enterprise">
+          <i class="iconfont">&#xe635;</i>
+          <i class="shop-enterprise-tag">企业</i>
+        </p>
+        <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+        <p class="com-grade">
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star">&#xe620;</span>
+          <i class="shop-score">4.0分</i>
+          <i class="shop-price">45元/人</i>
+        </p>
+        <div class="row shop-category">
+          <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+          <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+          <div class="col col-50 shop-distance">100m</div>
+        </div>
+      </div>
+      <div class="item item-thumbnail-left com-shop-info shop-banner">
+        <img src="../../../assets/images/shop-logo.jpg">
+        <p class="shop-attr shop-mini">
+          <i class="iconfont">&#xe635;</i>
+          <i class="shop-enterprise-tag">微商</i>
+        </p>
+        <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+        <p class="com-grade">
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star">&#xe620;</span>
+          <i class="shop-score">4.0分</i>
+          <i class="shop-price">45元/人</i>
+        </p>
+        <div class="row shop-category">
+          <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+          <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+          <div class="col col-50 shop-distance">100m</div>
+        </div>
+      </div>
 
+      <div class="item item-thumbnail-left com-shop-info shop-banner">
+        <img src="../../../assets/images/shop-logo.jpg">
+        <p class="shop-attr shop-enterprise">
+          <i class="iconfont">&#xe635;</i>
+          <i class="shop-enterprise-tag">企业</i>
+        </p>
+        <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+        <p class="com-grade">
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star">&#xe620;</span>
+          <i class="shop-score">4.0分</i>
+          <i class="shop-price">45元/人</i>
+        </p>
+        <div class="row shop-category">
+          <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+          <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+          <div class="col col-50 shop-distance">100m</div>
+        </div>
+      </div>
+      <div class="item item-thumbnail-left com-shop-info shop-banner">
+        <img src="../../../assets/images/shop-logo.jpg">
+        <p class="shop-attr shop-mini">
+          <i class="iconfont">&#xe635;</i>
+          <i class="shop-enterprise-tag">企业</i>
+        </p>
+        <h2>商家名称 <span class="com-discount">7.8折</span><span class="com-counteract"><i></i>报销100%</span></h2>
+        <p class="com-grade">
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star star-light">&#xe620;</span>
+          <span class="iconfont com-star">&#xe620;</span>
+          <i class="shop-score">4.0分</i>
+          <i class="shop-price">45元/人</i>
+        </p>
+        <div class="row shop-category">
+          <div class="col shop-cate"><i class="iconfont">&#xe634;</i>美食</div>
+          <div class="col shop-cate"><i class="iconfont">&#xe62f;</i>中关村</div>
+          <div class="col col-50 shop-distance">100m</div>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

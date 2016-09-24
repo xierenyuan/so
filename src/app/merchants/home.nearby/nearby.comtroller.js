@@ -3,8 +3,18 @@
  * Created by xuwus on 2016/9/23.
  */
 
+import kksjImg from 'assets/images/home/kksj.png';
 export default class ProjectCtrl {
-  constructor() {
+  constructor($scope) {
+    'ngInject';
+    this.$scope=$scope
+    this.$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
+      viewData.enableBack = false;
+
+    });
+
+
+    this.kksjImgSrc = kksjImg;
     this.tabItems=[
       {id:1,text:'全部分类',$hasActive:false},
       {id:2,text:'报销比例',$hasActive:false},

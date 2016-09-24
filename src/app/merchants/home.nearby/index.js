@@ -4,6 +4,8 @@
  */
 import './index.scss';
 import temp from './index.html';
+import shop from './shop';
+import eva from './evaluate';
 
 import NearbyCtrl from './nearby.comtroller';
 class Config {
@@ -22,7 +24,7 @@ class Config {
     });
   }
 }
-export default angular.module('so.app.merchants.nearby', [])
+export default angular.module('so.app.merchants.nearby', [shop,eva])
   .config(Config.ConfigInit)
   .controller(NearbyCtrl.name,NearbyCtrl)
   .name;

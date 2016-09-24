@@ -1,0 +1,157 @@
+@import "../../../../sass/shopBanner";
+@import "../../../../sass/star";
+
+$content-gray-bg: #f8f8f8;
+.shop-page {
+  background: $content-gray-bg;
+  .shop-photo {
+    > div:first-child {
+      position: relative;
+      .photo-face {
+        img {
+          width: 100%;
+        }
+      }
+      .photo-title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        color: white;
+        margin: 0;
+        font-size: px2TorRem(27px);
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        span:first-child {
+          z-index: 1;
+          top: 5px;
+          left:16px;
+        }
+        .photo-title-bag {
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+          background: black;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .shop-info {
+    text-align: center;
+    padding: 0 16px;
+    background: white;
+    margin-top: -10px;
+    border-bottom: 1px solid #ddd;
+    p {
+      margin: 0;
+      padding: 5px 0;
+    }
+    .info-name {
+      font-size: px2TorRem(35px);
+      color: #333333;
+      font-weight: 400;
+    }
+    .info-discount {
+      font-size: px2TorRem(55px);
+      color: #ff696d;
+
+      font-weight: 500;
+    }
+    .info-price {
+      font-size: px2TorRem(30px);
+      color: #ff696d;
+    }
+    .info-address {
+      font-size: px2TorRem(20px);
+      color: #848383;
+      text-align: left;
+      width: 80%;
+      float: left;
+      .iconfont {
+        float: left;
+        width: 7%;
+        color: #ff696d;
+      }
+      span {
+        float: left;
+        width: 93%;
+      }
+    }
+    .info-tell {
+      float: right;
+      width: 20%;
+      text-align: right;
+      padding-top: 10px;
+      .iconfont {
+        font-size: px2TorRem(80px);
+        color: #ff9999;
+      }
+    }
+  }
+  .shop-grade {
+    .row {
+      padding: 0;
+      padding-right: 5px;
+      .col {
+        padding: 0;
+      }
+      .col:first-child {
+        font-size: px2TorRem(33px);
+        color: #666666;
+      }
+      .grade-star {
+        text-align: right;
+        .shop-score {
+          font-size: px2TorRem(25px);
+          color: #ff696d;
+        }
+      }
+    }
+    .ion-chevron-right {
+      position: absolute;
+      right: 8px;
+      font-size: px2TorRem(24px);
+      color: gray;
+    }
+  }
+
+  .record-title{
+    color: #5f5f5f;
+    font-size: px2TorRem(30px);
+    padding: 5px 0;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+  }
+  .shop-recommend{
+    .recod-name{
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: flex-start;
+      li{
+        box-sizing: border-box;
+        flex: 0 0 20%;
+        text-align: center;
+        color: #969696;
+        font-size: px2TorRem(30px);
+
+      };
+    }
+    .record-detail{
+      .detail-imgs{
+        img{
+          width: 100%;
+        }
+      }
+      .detail-text{
+        width: 100%;white-space: normal;
+        font-size: px2TorRem(25px);
+        color: #848484;
+      }
+    }
+  }
+}

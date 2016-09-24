@@ -6,6 +6,10 @@
 import './index.scss';
 import shops from './shops';
 import list from './list';
+import manage from './shop.manage';
+import info from './order.info';
+import bisOrder from './business.order';
+import dtlOrder from './order.detail';
 import temp from './index.html';
 import MHomeCtrl from './home.controller';
 
@@ -21,7 +25,7 @@ class Config {
     }
 }
 
-export default angular.module('so.app.merchants.home', [shops, list])
+export default angular.module('so.app.merchants.home', [shops, list,manage,info,bisOrder,dtlOrder])
     .config(Config.ConfigInit)
     .controller(MHomeCtrl.name, MHomeCtrl)
     .name;

@@ -1,22 +1,23 @@
 <ion-tabs class=" tabs-icon-top tabs-color-active-positive merchants-tabs">
     <!-- 商铺 -->
-    <ion-tab title="商铺" icon-off="ion-home" icon-on="ion-home" ui-sref="m.home.shops">
+    <ion-tab title="商铺" icon-off="ion-home" icon-on="ion-home" ng-click="toTab('m.home.shops')">
         <ion-nav-view name="shops"></ion-nav-view>
     </ion-tab>
     <!-- 消费 -->
-    <ion-tab title="消费" icon-off="ion-ios-cart" icon-on="ion-ios-cart" ui-sref="m.home.consume">
+    <ion-tab title="消费" icon-off="ion-ios-cart" icon-on="ion-ios-cart" ng-click="toTab('m.home.consume')">
         <ion-nav-view name="consume"></ion-nav-view>
     </ion-tab>
     <!-- 扫凸扫 -->
     <ion-tab class="m-tab-aotuao" disabled="true" title="扫凸扫" icon-off="ion-qr-scanner" icon-on="ion-qr-scanner">
     </ion-tab>
-    <ion-tab title="附近" icon-off="ion-location" icon-on="ion-ios-chatboxes" ui-sref="m.home.nearby">
+    <ion-tab title="附近" icon-off="ion-location" icon-on="ion-ios-chatboxes" ng-click="toTab('m.home.nearby')">
         <ion-nav-view name="nearby"></ion-nav-view>
     </ion-tab>
-    <ion-tab title="众筹" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" ui-sref="m.home.crowd">
+    <ion-tab title="众筹" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" ng-click="toTab('m.home.crowd')">
         <ion-nav-view name="crowd"></ion-nav-view>
     </ion-tab>
 </ion-tabs>
+<!--扫凸扫 -->
 <!--扫凸扫 -->
 <div class="s-btn-contain" ng-click="home.onScan()">
     <button type="button" class="s-btn-ata button button-positive ">

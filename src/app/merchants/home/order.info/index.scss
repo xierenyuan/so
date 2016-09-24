@@ -1,0 +1,43 @@
+
+@import "../../../../sass/soTabs";
+.order-info{
+  background: #f8f8f8;
+
+  .info-list:first-child{
+    border-top: 0;
+  }
+  .info-list:last-child{
+    border-bottom: 0;
+  }
+}
+.info-list{
+  >img:first-child{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+  }
+  >h2{
+    span{
+      float: right;
+      font-size: 13px;
+      color: #6d6d6d;
+    }
+  }
+  >p{
+    span:first-child:not(.com-star){
+      font-size: 14px;
+      color: #6d6d6d;
+    }
+    span:last-child:not(.com-star){
+      float: right;
+      color: #ff696d;
+      font-size: 12px;
+    }
+    span.info-bths:not(.com-star){
+      color: white;
+      background: #ff696d;
+      padding: 1px 10px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+    }
+  }
+}

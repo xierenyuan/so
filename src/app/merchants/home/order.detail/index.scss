@@ -1,0 +1,25 @@
+@import "../order.info/index";
+@import "../../../../sass/star";
+.order-detail{
+  background: #f8f8f8;
+  .info-list{
+    >h2{
+      span{
+        font-size: 15px;
+      }
+    }
+  }
+  .detail-msg{
+    span:first-child{
+      white-space:nowrap;
+    }
+  }
+  .detail-btn-enter{
+    padding: 5px;
+    .button{
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      background: #ff696d;
+    }
+  }
+}

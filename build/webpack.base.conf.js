@@ -58,7 +58,7 @@ module.exports = {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
             loader: process.env.NODE_ENV === 'production' ? 'u' : 'url',
             query: {
-                limit: 10000,
+                limit: 500000,
                 name: utils.assetsPath('img/[name].[hash:7].[ext]')
             }
         }, {

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * ionic 配置
  * @export
  * @class IonicConfig
@@ -7,7 +7,7 @@
  */
 export default class IonicConfig {
     /**
-     * 
+     *
      * ui 启动入口
      * @static
      * @param {any} $ionicPlatform
@@ -28,7 +28,7 @@ export default class IonicConfig {
     }
 
     /**
-     * 
+     *
      * ui 配置
      * @static
      * @param {any} $stateProvider
@@ -36,7 +36,6 @@ export default class IonicConfig {
      */
     static ConfigInit($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
         'ngInject';
-
         //ionic 配置
         $ionicConfigProvider.platform.ios.tabs.style('standard');
         $ionicConfigProvider.platform.ios.tabs.position('bottom');
